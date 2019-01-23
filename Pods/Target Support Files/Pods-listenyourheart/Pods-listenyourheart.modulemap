@@ -1,0 +1,6 @@
+framework module Pods_listenyourheart {
+  umbrella header "Pods-listenyourheart-umbrella.h"
+
+  export *
+  module * { export * }
+}
