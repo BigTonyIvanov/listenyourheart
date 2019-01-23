@@ -25,7 +25,7 @@ extension ViewController{
         if Authorization.sharedInstance.authComplete != true {
             DispatchQueue.main.async {
                 let storyboard = UIStoryboard(name: "Auth", bundle: nil)
-                let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                let loginViewController = storyboard.instantiateViewController(withIdentifier: "WelcomNavigationController") as! WelcomNavigationController
                 
                 self.present(loginViewController, animated: true)
                 return

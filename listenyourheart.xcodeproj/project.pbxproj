@@ -15,8 +15,13 @@
 		F7DDC4D321F5A3F900D0D928 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DDC4D121F5A3F900D0D928 /* LaunchScreen.storyboard */; };
 		F7DDC4DB21F5A69600D0D928 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7DDC4DA21F5A69600D0D928 /* GoogleService-Info.plist */; };
 		F7DDC4DD21F5ECB400D0D928 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DDC4DC21F5ECB400D0D928 /* Auth.storyboard */; };
-		F7DDC4DF21F5EE2500D0D928 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DDC4DE21F5EE2500D0D928 /* LoginViewController.swift */; };
+		F7DDC4DF21F5EE2500D0D928 /* WelcomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DDC4DE21F5EE2500D0D928 /* WelcomViewController.swift */; };
 		F7EA0BA321F838D3003E3A2A /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA0BA221F838D3003E3A2A /* Authorization.swift */; };
+		F7EA0BA521F88B01003E3A2A /* WelcomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA0BA421F88B01003E3A2A /* WelcomView.swift */; };
+		F7EA0BA821F892BC003E3A2A /* ViewSpecificController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA0BA721F892BC003E3A2A /* ViewSpecificController.swift */; };
+		F7EA0BAA21F9068E003E3A2A /* WelcomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA0BA921F9068E003E3A2A /* WelcomNavigationController.swift */; };
+		F7EA0BAD21F91207003E3A2A /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA0BAC21F91207003E3A2A /* Slide.swift */; };
+		F7EA0BAF21F91251003E3A2A /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7EA0BAE21F91251003E3A2A /* Slide.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +37,14 @@
 		F7DDC4D421F5A3F900D0D928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7DDC4DA21F5A69600D0D928 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F7DDC4DC21F5ECB400D0D928 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
-		F7DDC4DE21F5EE2500D0D928 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F7DDC4DE21F5EE2500D0D928 /* WelcomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomViewController.swift; sourceTree = "<group>"; };
 		F7DDC4E021F5F0D700D0D928 /* listenyourheart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = listenyourheart.entitlements; sourceTree = "<group>"; };
 		F7EA0BA221F838D3003E3A2A /* Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
+		F7EA0BA421F88B01003E3A2A /* WelcomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomView.swift; sourceTree = "<group>"; };
+		F7EA0BA721F892BC003E3A2A /* ViewSpecificController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSpecificController.swift; sourceTree = "<group>"; };
+		F7EA0BA921F9068E003E3A2A /* WelcomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomNavigationController.swift; sourceTree = "<group>"; };
+		F7EA0BAC21F91207003E3A2A /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		F7EA0BAE21F91251003E3A2A /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,8 +204,9 @@
 		F7DDC4EC21F648BB00D0D928 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F7DDC4DE21F5EE2500D0D928 /* LoginViewController.swift */,
+				F7DDC4DE21F5EE2500D0D928 /* WelcomViewController.swift */,
 				F7EA0BA221F838D3003E3A2A /* Authorization.swift */,
+				F7EA0BA921F9068E003E3A2A /* WelcomNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -203,7 +214,10 @@
 		F7DDC4ED21F648C600D0D928 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F7EA0BAB21F911EE003E3A2A /* Slider */,
+				F7EA0BA621F89294003E3A2A /* Extension */,
 				F7DDC4DC21F5ECB400D0D928 /* Auth.storyboard */,
+				F7EA0BA421F88B01003E3A2A /* WelcomView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,6 +250,23 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F7EA0BA621F89294003E3A2A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F7EA0BA721F892BC003E3A2A /* ViewSpecificController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F7EA0BAB21F911EE003E3A2A /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				F7EA0BAC21F91207003E3A2A /* Slide.swift */,
+				F7EA0BAE21F91251003E3A2A /* Slide.xib */,
+			);
+			path = Slider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +342,7 @@
 				F7DDC4DD21F5ECB400D0D928 /* Auth.storyboard in Resources */,
 				F7DDC4D021F5A3F900D0D928 /* Assets.xcassets in Resources */,
 				F7DDC4CE21F5A3F700D0D928 /* Predictions.storyboard in Resources */,
+				F7EA0BAF21F91251003E3A2A /* Slide.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,10 +404,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7DDC4DF21F5EE2500D0D928 /* LoginViewController.swift in Sources */,
+				F7EA0BA821F892BC003E3A2A /* ViewSpecificController.swift in Sources */,
+				F7EA0BAA21F9068E003E3A2A /* WelcomNavigationController.swift in Sources */,
+				F7DDC4DF21F5EE2500D0D928 /* WelcomViewController.swift in Sources */,
 				F7EA0BA321F838D3003E3A2A /* Authorization.swift in Sources */,
 				F7DDC4CB21F5A3F700D0D928 /* ViewController.swift in Sources */,
+				F7EA0BA521F88B01003E3A2A /* WelcomView.swift in Sources */,
 				F7DDC4C921F5A3F700D0D928 /* AppDelegate.swift in Sources */,
+				F7EA0BAD21F91207003E3A2A /* Slide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
