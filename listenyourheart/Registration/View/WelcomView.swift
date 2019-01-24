@@ -49,7 +49,7 @@ final class WelcomView: UIView, UIScrollViewDelegate{
     
     // MARK: - Setup
     private func setupGetStartedButton() {
-        getStartedButton.backgroundColor = .blue
+       // getStartedButton.backgroundColor = .blue
     }
     
     private func setupScrollView() {

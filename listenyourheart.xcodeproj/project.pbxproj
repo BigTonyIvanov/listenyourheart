@@ -22,6 +22,7 @@
 		F7EA0BAA21F9068E003E3A2A /* WelcomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA0BA921F9068E003E3A2A /* WelcomNavigationController.swift */; };
 		F7EA0BAD21F91207003E3A2A /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA0BAC21F91207003E3A2A /* Slide.swift */; };
 		F7EA0BAF21F91251003E3A2A /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7EA0BAE21F91251003E3A2A /* Slide.xib */; };
+		F7EA0BB721F98C3C003E3A2A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA0BB621F98C3C003E3A2A /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		F7EA0BA921F9068E003E3A2A /* WelcomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomNavigationController.swift; sourceTree = "<group>"; };
 		F7EA0BAC21F91207003E3A2A /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		F7EA0BAE21F91251003E3A2A /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		F7EA0BB621F98C3C003E3A2A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 				F7EA0BA621F89294003E3A2A /* Extension */,
 				F7DDC4DC21F5ECB400D0D928 /* Auth.storyboard */,
 				F7EA0BA421F88B01003E3A2A /* WelcomView.swift */,
+				F7EA0BB621F98C3C003E3A2A /* CustomButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 			files = (
 				F7EA0BA821F892BC003E3A2A /* ViewSpecificController.swift in Sources */,
 				F7EA0BAA21F9068E003E3A2A /* WelcomNavigationController.swift in Sources */,
+				F7EA0BB721F98C3C003E3A2A /* CustomButton.swift in Sources */,
 				F7DDC4DF21F5EE2500D0D928 /* WelcomViewController.swift in Sources */,
 				F7EA0BA321F838D3003E3A2A /* Authorization.swift in Sources */,
 				F7DDC4CB21F5A3F700D0D928 /* ViewController.swift in Sources */,
