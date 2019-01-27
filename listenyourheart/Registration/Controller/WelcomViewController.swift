@@ -25,6 +25,9 @@ class WelcomViewController: UIViewController , ViewSpecificController{
             Authorization.sharedInstance.authDoneCallBack = goNextScreen
         }
         
+        // delete button name from backBarButton
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
     }
     
     func goNextScreen(){
