@@ -85,7 +85,9 @@
                             <outlet property="scrollView" destination="4Jf-H8-H9n" id="0h2-id-dNg"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="5ep-Ae-CzJ"/>
+                    <navigationItem key="navigationItem" id="5ep-Ae-CzJ">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Bt4-N8-apQ"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ur4-HX-mAP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,6 +115,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="confirmYourData:" destination="4QD-6P-aNi" eventType="touchUpInside" id="bsS-qF-dlv"/>
+                                    <segue destination="Xx5-RS-ty6" kind="show" id="G4I-Tt-6On"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your personal data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWz-pq-dQP">
@@ -187,11 +190,29 @@
                             <outlet property="nextButton" destination="ToP-eZ-1He" id="Lyk-RX-Px9"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tutorial" id="tA5-2K-I44"/>
+                    <navigationItem key="navigationItem" title="Tutorial" id="tA5-2K-I44">
+                        <barButtonItem key="backBarButtonItem" title=" " id="6FV-md-Ohc"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ma2-Fn-jhd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2841" y="135"/>
+        </scene>
+        <!--Your Personal Data-->
+        <scene sceneID="qaD-zn-vrs">
+            <objects>
+                <viewController id="Xx5-RS-ty6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YUl-ay-wJH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BNN-jA-DSc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Your Personal Data" id="Ple-BS-fiu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ilI-LM-4yu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3751" y="134"/>
         </scene>
         <!--Welcom Navigation Controller-->
         <scene sceneID="Fjf-4Q-wfP">

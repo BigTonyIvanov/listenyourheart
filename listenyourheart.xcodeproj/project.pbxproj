@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4975241C1A56C8ACFE6B48F2 /* Pods_listenyourheart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B4F5082ECA3E5F0C42A111 /* Pods_listenyourheart.framework */; };
+		F78BA93521FE460300D0A676 /* ConfirmPersonalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78BA93421FE460300D0A676 /* ConfirmPersonalDataView.swift */; };
+		F78BA93721FE462000D0A676 /* ConfirmPersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78BA93621FE462000D0A676 /* ConfirmPersonalDataVC.swift */; };
 		F7DDC4C921F5A3F700D0D928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DDC4C821F5A3F700D0D928 /* AppDelegate.swift */; };
 		F7DDC4CB21F5A3F700D0D928 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DDC4CA21F5A3F700D0D928 /* ViewController.swift */; };
 		F7DDC4CE21F5A3F700D0D928 /* Predictions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DDC4CC21F5A3F700D0D928 /* Predictions.storyboard */; };
@@ -31,6 +33,8 @@
 		5658905835FC12B2947531EF /* Pods-listenyourheart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-listenyourheart.release.xcconfig"; path = "Pods/Target Support Files/Pods-listenyourheart/Pods-listenyourheart.release.xcconfig"; sourceTree = "<group>"; };
 		A9B4F5082ECA3E5F0C42A111 /* Pods_listenyourheart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_listenyourheart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A828AD6FB2BB70C64B26E5 /* Pods-listenyourheart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-listenyourheart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-listenyourheart/Pods-listenyourheart.debug.xcconfig"; sourceTree = "<group>"; };
+		F78BA93421FE460300D0A676 /* ConfirmPersonalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPersonalDataView.swift; sourceTree = "<group>"; };
+		F78BA93621FE462000D0A676 /* ConfirmPersonalDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPersonalDataVC.swift; sourceTree = "<group>"; };
 		F7DDC4C521F5A3F700D0D928 /* listenyourheart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = listenyourheart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DDC4C821F5A3F700D0D928 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DDC4CA21F5A3F700D0D928 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +218,7 @@
 				F7EA0BA221F838D3003E3A2A /* Authorization.swift */,
 				F7EA0BA921F9068E003E3A2A /* WelcomNavigationController.swift */,
 				F7EA0BB821F9CA4E003E3A2A /* PersonalDataVC.swift */,
+				F78BA93621FE462000D0A676 /* ConfirmPersonalDataVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 				F7EA0BA421F88B01003E3A2A /* WelcomView.swift */,
 				F7EA0BB621F98C3C003E3A2A /* CustomButton.swift */,
 				F7EA0BBA21F9CA97003E3A2A /* PersonalDataView.swift */,
+				F78BA93421FE460300D0A676 /* ConfirmPersonalDataView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -423,7 +429,9 @@
 				F7EA0BBB21F9CA97003E3A2A /* PersonalDataView.swift in Sources */,
 				F7DDC4DF21F5EE2500D0D928 /* WelcomViewController.swift in Sources */,
 				F7EA0BA321F838D3003E3A2A /* Authorization.swift in Sources */,
+				F78BA93521FE460300D0A676 /* ConfirmPersonalDataView.swift in Sources */,
 				F7DDC4CB21F5A3F700D0D928 /* ViewController.swift in Sources */,
+				F78BA93721FE462000D0A676 /* ConfirmPersonalDataVC.swift in Sources */,
 				F7EA0BA521F88B01003E3A2A /* WelcomView.swift in Sources */,
 				F7DDC4C921F5A3F700D0D928 /* AppDelegate.swift in Sources */,
 				F7EA0BAD21F91207003E3A2A /* Slide.swift in Sources */,

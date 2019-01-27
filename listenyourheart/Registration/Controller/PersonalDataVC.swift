@@ -17,8 +17,6 @@ class PersonalDataVC: UIViewController, ViewSpecificController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // delete button name from backBarButton
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     @IBAction func pressedTextField(_ sender: UITextField) {
