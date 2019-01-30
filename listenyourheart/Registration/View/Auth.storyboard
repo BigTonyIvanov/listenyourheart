@@ -337,6 +337,10 @@
                             <constraint firstItem="EkA-eH-Qin" firstAttribute="leading" secondItem="BNN-jA-DSc" secondAttribute="leading" id="kI2-XN-NdV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BNN-jA-DSc"/>
+                        <connections>
+                            <outlet property="birthDateLabel" destination="ySH-E5-LKN" id="f1p-CC-mID"/>
+                            <outlet property="nameLabel" destination="NcC-rd-NuZ" id="Yas-aD-SVl"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Your Personal Data" id="Ple-BS-fiu"/>
                 </viewController>

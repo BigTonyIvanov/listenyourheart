@@ -49,9 +49,9 @@ class PersonalDataVC: UIViewController, ViewSpecificController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let vc = segue.destination as! PersonalDataController
-//        vc.name = self.nameFieldsGo
-//        vc.birthday = self.birthDateGo
+        let vc = segue.destination as! ConfirmPersonalDataVC
+        vc.name = self.nameFieldsGo
+        vc.birthday = self.birthDateGo
     }
     
 

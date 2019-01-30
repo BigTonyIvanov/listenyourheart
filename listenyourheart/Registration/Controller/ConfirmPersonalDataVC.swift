@@ -8,10 +8,19 @@
 
 import UIKit
 
-class ConfirmPersonalDataVC: UIViewController {
-
+class ConfirmPersonalDataVC: UIViewController, ViewSpecificController {
+    
+ typealias RootView = ConfirmPersonalDataView
+    
+    var name = ""
+    var birthday = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        view().nameLabel.text = " " + self.name + " "
+        view().birthDateLabel.text = " " + self.birthday + " "
 
     }
 

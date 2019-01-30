@@ -10,12 +10,15 @@ import Foundation
 import UIKit
 
 final class PersonalDataView: UIView, UITextFieldDelegate {
+    
+    
     // Mark: - subviews
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var birthDateTextField: UITextField!
     
     @IBOutlet weak var nextButton: CustomButton!
+    
     lazy private var datePicker: UIDatePicker = {
         // Create DatePicker and add it on textField
 
@@ -55,6 +58,7 @@ final class PersonalDataView: UIView, UITextFieldDelegate {
         setupbirthDateField()
     }
     
+    //Default func fur hidden keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.endEditing(true)
     }

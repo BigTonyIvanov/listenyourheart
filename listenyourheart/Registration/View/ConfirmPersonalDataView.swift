@@ -9,5 +9,27 @@
 import UIKit
 
 class ConfirmPersonalDataView: UIView{
+    // Mark: - subviews
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var birthDateLabel: UILabel!
+    
+    
+    
+    // MARK: - override
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        
+
+    }
+
+    
+    // MARK: - setup
+   
+    
+
     
 }
+
+
