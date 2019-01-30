@@ -6,4 +6,8 @@
 //  Copyright © 2019 Антон Иванов. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class ConfirmPersonalDataView: UIView{
+    
+}

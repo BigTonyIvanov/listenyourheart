@@ -45,7 +45,7 @@ class PersonalDataVC: UIViewController, ViewSpecificController {
     @IBAction func confirmYourData(_ sender: AnyObject){
         self.birthDateGo = view().birthDateTextField.text!
         self.nameFieldsGo = view().nameTextField.text!
-        performSegue(withIdentifier: "showPeronalData", sender: self)
+        performSegue(withIdentifier: "showPersonalData", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
