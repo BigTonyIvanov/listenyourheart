@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4975241C1A56C8ACFE6B48F2 /* Pods_listenyourheart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B4F5082ECA3E5F0C42A111 /* Pods_listenyourheart.framework */; };
+		F708B84D220CA4EA006A165F /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F708B84C220CA4EA006A165F /* UserProfile.swift */; };
+		F708B84F220CA6EE006A165F /* FirebaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F708B84E220CA6EE006A165F /* FirebaseData.swift */; };
 		F78BA93521FE460300D0A676 /* ConfirmPersonalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78BA93421FE460300D0A676 /* ConfirmPersonalDataView.swift */; };
 		F78BA93721FE462000D0A676 /* ConfirmPersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78BA93621FE462000D0A676 /* ConfirmPersonalDataVC.swift */; };
 		F7DDC4C921F5A3F700D0D928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DDC4C821F5A3F700D0D928 /* AppDelegate.swift */; };
@@ -33,6 +35,8 @@
 		5658905835FC12B2947531EF /* Pods-listenyourheart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-listenyourheart.release.xcconfig"; path = "Pods/Target Support Files/Pods-listenyourheart/Pods-listenyourheart.release.xcconfig"; sourceTree = "<group>"; };
 		A9B4F5082ECA3E5F0C42A111 /* Pods_listenyourheart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_listenyourheart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A828AD6FB2BB70C64B26E5 /* Pods-listenyourheart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-listenyourheart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-listenyourheart/Pods-listenyourheart.debug.xcconfig"; sourceTree = "<group>"; };
+		F708B84C220CA4EA006A165F /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		F708B84E220CA6EE006A165F /* FirebaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseData.swift; sourceTree = "<group>"; };
 		F78BA93421FE460300D0A676 /* ConfirmPersonalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPersonalDataView.swift; sourceTree = "<group>"; };
 		F78BA93621FE462000D0A676 /* ConfirmPersonalDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPersonalDataVC.swift; sourceTree = "<group>"; };
 		F7DDC4C521F5A3F700D0D928 /* listenyourheart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = listenyourheart.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +93,8 @@
 		F7DDC4BC21F5A3F700D0D928 = {
 			isa = PBXGroup;
 			children = (
+				F708B84E220CA6EE006A165F /* FirebaseData.swift */,
+				F708B84C220CA4EA006A165F /* UserProfile.swift */,
 				F7DDC4C721F5A3F700D0D928 /* listenyourheart */,
 				F7DDC4C621F5A3F700D0D928 /* Products */,
 				F58E26219668346FA537D0F7 /* Pods */,
@@ -400,6 +406,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-listenyourheart/Pods-listenyourheart-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -408,6 +415,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +432,8 @@
 			files = (
 				F7EA0BB921F9CA4E003E3A2A /* PersonalDataVC.swift in Sources */,
 				F7EA0BA821F892BC003E3A2A /* ViewSpecificController.swift in Sources */,
+				F708B84D220CA4EA006A165F /* UserProfile.swift in Sources */,
+				F708B84F220CA6EE006A165F /* FirebaseData.swift in Sources */,
 				F7EA0BAA21F9068E003E3A2A /* WelcomNavigationController.swift in Sources */,
 				F7EA0BB721F98C3C003E3A2A /* CustomButton.swift in Sources */,
 				F7EA0BBB21F9CA97003E3A2A /* PersonalDataView.swift in Sources */,

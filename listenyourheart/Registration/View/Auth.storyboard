@@ -212,53 +212,13 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Almost done" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s15-D8-pNH">
-                                        <rect key="frame" x="126.5" y="50" width="122.5" height="25.5"/>
+                                        <rect key="frame" x="126.5" y="25" width="122.5" height="25.5"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
                                         <color key="textColor" red="1" green="0.089874161440000003" blue="0.053659645290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="rlY-Gk-eiM">
-                                        <rect key="frame" x="50" y="260.5" width="275" height="155"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yBn-Kj-CWg">
-                                                <rect key="frame" x="0.0" y="0.0" width="115" height="155"/>
-                                                <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Zodiac sign" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgn-Vi-Wcc">
-                                                        <rect key="frame" x="0.0" y="0.0" width="115" height="20"/>
-                                                        <color key="textColor" red="1" green="0.089874161440000003" blue="0.053659645290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="libra" translatesAutoresizingMaskIntoConstraints="NO" id="xsm-Cj-3f3">
-                                                        <rect key="frame" x="0.0" y="40" width="115" height="115"/>
-                                                    </imageView>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tQo-Ow-s02">
-                                                <rect key="frame" x="160" y="0.0" width="115" height="155"/>
-                                                <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f1q-TH-gMf">
-                                                        <rect key="frame" x="38.5" y="0.0" width="38.5" height="20"/>
-                                                        <attributedString key="attributedText">
-                                                            <fragment content="Year">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="1" green="0.089874161440000003" blue="0.053659645290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <font key="NSFont" size="17" name="Helvetica"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horse" translatesAutoresizingMaskIntoConstraints="NO" id="7O0-Wx-GoE">
-                                                        <rect key="frame" x="0.0" y="40" width="115" height="115"/>
-                                                    </imageView>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LzL-05-W0N">
-                                        <rect key="frame" x="15" y="120.5" width="345" height="100"/>
+                                        <rect key="frame" x="15" y="75.5" width="345" height="100"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMK-gN-y0u">
                                                 <rect key="frame" x="15" y="15" width="50" height="20.5"/>
@@ -315,16 +275,70 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSR-jg-MNV" customClass="CustomButton" customModule="listenyourheart" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="529" width="345" height="44"/>
+                                        <state key="normal" title="YES THAT`S RIGHT"/>
+                                        <connections>
+                                            <action selector="confirmData:" destination="Xx5-RS-ty6" eventType="touchUpInside" id="zXE-3n-Bxv"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="rlY-Gk-eiM">
+                                        <rect key="frame" x="50" y="215.5" width="275" height="200"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yBn-Kj-CWg">
+                                                <rect key="frame" x="0.0" y="0.0" width="115" height="200"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Zodiac sign" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgn-Vi-Wcc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="115" height="20"/>
+                                                        <color key="textColor" red="1" green="0.089874161440000003" blue="0.053659645290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="libra" translatesAutoresizingMaskIntoConstraints="NO" id="xsm-Cj-3f3">
+                                                        <rect key="frame" x="0.0" y="85" width="115" height="115"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tQo-Ow-s02">
+                                                <rect key="frame" x="160" y="0.0" width="115" height="200"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f1q-TH-gMf">
+                                                        <rect key="frame" x="38.5" y="0.0" width="38.5" height="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Year">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="1" green="0.089874161440000003" blue="0.053659645290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="17" name="Helvetica"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horse" translatesAutoresizingMaskIntoConstraints="NO" id="7O0-Wx-GoE">
+                                                        <rect key="frame" x="0.0" y="85" width="115" height="115"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="rlY-Gk-eiM" firstAttribute="top" secondItem="LzL-05-W0N" secondAttribute="bottom" constant="40" id="0Up-k6-N4H"/>
-                                    <constraint firstItem="LzL-05-W0N" firstAttribute="top" secondItem="s15-D8-pNH" secondAttribute="bottom" constant="45" id="F82-6g-S4O"/>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rlY-Gk-eiM" secondAttribute="bottom" constant="187.5" id="hMf-kf-kQe"/>
+                                    <constraint firstItem="RSR-jg-MNV" firstAttribute="top" relation="lessThanOrEqual" secondItem="rlY-Gk-eiM" secondAttribute="bottom" constant="113.5" id="A0A-sQ-927"/>
+                                    <constraint firstAttribute="trailing" secondItem="RSR-jg-MNV" secondAttribute="trailing" constant="15" id="BLk-ED-G7K"/>
+                                    <constraint firstItem="LzL-05-W0N" firstAttribute="top" secondItem="s15-D8-pNH" secondAttribute="bottom" constant="45" id="F82-6g-S4O">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="25"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="RSR-jg-MNV" secondAttribute="bottom" constant="30" id="efa-pF-IZG"/>
                                     <constraint firstItem="LzL-05-W0N" firstAttribute="leading" secondItem="EkA-eH-Qin" secondAttribute="leading" constant="15" id="iaQ-xI-3cQ"/>
                                     <constraint firstItem="s15-D8-pNH" firstAttribute="centerX" secondItem="EkA-eH-Qin" secondAttribute="centerX" id="ibI-DZ-lSa"/>
+                                    <constraint firstItem="RSR-jg-MNV" firstAttribute="leading" secondItem="EkA-eH-Qin" secondAttribute="leading" constant="15" id="nmA-Ie-6uC"/>
                                     <constraint firstItem="rlY-Gk-eiM" firstAttribute="centerX" secondItem="EkA-eH-Qin" secondAttribute="centerX" id="ol0-Sm-XCx"/>
-                                    <constraint firstItem="s15-D8-pNH" firstAttribute="top" secondItem="EkA-eH-Qin" secondAttribute="top" constant="50" id="tCT-wM-09l"/>
+                                    <constraint firstItem="s15-D8-pNH" firstAttribute="top" secondItem="EkA-eH-Qin" secondAttribute="top" constant="50" id="tCT-wM-09l">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="25"/>
+                                    </constraint>
                                     <constraint firstAttribute="trailing" secondItem="LzL-05-W0N" secondAttribute="trailing" constant="15" id="ztw-t3-KfR"/>
                                 </constraints>
                             </view>

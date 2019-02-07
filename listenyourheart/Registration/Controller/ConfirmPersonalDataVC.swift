@@ -62,7 +62,11 @@ class ConfirmPersonalDataVC: UIViewController, ViewSpecificController {
         
 
     }
-
+    @IBAction func confirmData(_ sender: Any) {
+        let userData = ["name": self.name,"birthDate": self.birthday]
+        FirebaseData.sharedInstanse.saveIntoFirebase(userData: userData)
+    }
+    
 }
 
 extension ConfirmPersonalDataVC{
@@ -87,8 +91,6 @@ extension ConfirmPersonalDataVC{
         }
         
         view().setChineseYear(with: years[identValue].rawValue)
-
-    
     
     }
     
