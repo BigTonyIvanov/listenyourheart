@@ -339,7 +339,9 @@
                         <viewLayoutGuide key="safeArea" id="BNN-jA-DSc"/>
                         <connections>
                             <outlet property="birthDateLabel" destination="ySH-E5-LKN" id="f1p-CC-mID"/>
+                            <outlet property="chineseYear" destination="7O0-Wx-GoE" id="lHk-A0-nS6"/>
                             <outlet property="nameLabel" destination="NcC-rd-NuZ" id="Yas-aD-SVl"/>
+                            <outlet property="zodiacSign" destination="xsm-Cj-3f3" id="hSg-aB-p13"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Your Personal Data" id="Ple-BS-fiu"/>

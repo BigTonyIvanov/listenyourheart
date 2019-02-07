@@ -13,20 +13,33 @@ class ConfirmPersonalDataView: UIView{
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var birthDateLabel: UILabel!
+    @IBOutlet weak var zodiacSign: UIImageView!
+    @IBOutlet weak var chineseYear: UIImageView!
     
     
     
     // MARK: - override
     override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        
-
+        super.awakeFromNib()        
     }
 
     
     // MARK: - setup
    
+    func setZodiacSign(with imgName: String){
+        if(zodiacSign != nil){
+            zodiacSign.image = UIImage(named: imgName)
+            
+        }
+        
+    }
+    
+    func setChineseYear(with imgName: String){
+        if(chineseYear != nil){
+            chineseYear.image = UIImage(named: imgName)
+            
+        }
+    }
     
 
     
