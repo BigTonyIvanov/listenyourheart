@@ -9,6 +9,7 @@
 import UIKit
 
 class PersonalDataVC: UIViewController, ViewSpecificController {
+    
     typealias RootView = PersonalDataView
     
     private var nameFieldsGo = ""

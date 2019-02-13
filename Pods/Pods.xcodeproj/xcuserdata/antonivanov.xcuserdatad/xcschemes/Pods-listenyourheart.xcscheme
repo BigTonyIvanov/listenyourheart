@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8BF291559DBD9D76B20F4A0A58032BFA"
+               BlueprintIdentifier = "E9F6D6B77415316178C1DB2762811A5B"
                BuildableName = "Pods_listenyourheart.framework"
                BlueprintName = "Pods-listenyourheart"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8BF291559DBD9D76B20F4A0A58032BFA"
+            BlueprintIdentifier = "E9F6D6B77415316178C1DB2762811A5B"
             BuildableName = "Pods_listenyourheart.framework"
             BlueprintName = "Pods-listenyourheart"
             ReferencedContainer = "container:Pods.xcodeproj">

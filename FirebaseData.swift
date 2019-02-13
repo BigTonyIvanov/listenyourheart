@@ -8,6 +8,7 @@
 
 import FirebaseAuth
 import FirebaseDatabase
+import FirebaseRemoteConfig
 
 class FirebaseData{
     
@@ -29,17 +30,20 @@ class FirebaseData{
         let userData = ["name": userProfile?.name, "birthDate": userProfile?.birthDate]
         let values = [uid: userData]
         
-        print(values)
-        
         Database.database().reference(withPath: "users").updateChildValues(values) { (error, _) in
             
             if let error = error {
                 print(error)
                 return
             }
-            
             print("Successfully saved user into firebase database")
-            //self.openMainViewController()
         }
+    }
+    
+    func getRemouteConfig(by value: String) -> Int{
+        
+        
+        
+        return 0
     }
 }

@@ -51,6 +51,6 @@ class WelcomViewController: UIViewController , ViewSpecificController{
 
 extension WelcomViewController{
     @IBAction func getStrted(){
-        print("jsdfhsdkh")
+        print("pressed GET STARTED")
         }
 }

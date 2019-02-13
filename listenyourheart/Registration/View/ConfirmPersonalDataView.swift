@@ -15,12 +15,13 @@ class ConfirmPersonalDataView: UIView{
     @IBOutlet weak var birthDateLabel: UILabel!
     @IBOutlet weak var zodiacSign: UIImageView!
     @IBOutlet weak var chineseYear: UIImageView!
-    
+    @IBOutlet weak var progressActivity: UIActivityIndicatorView!
     
     
     // MARK: - override
     override func awakeFromNib() {
-        super.awakeFromNib()        
+        super.awakeFromNib()
+        progressActivity.isHidden = true
     }
 
     

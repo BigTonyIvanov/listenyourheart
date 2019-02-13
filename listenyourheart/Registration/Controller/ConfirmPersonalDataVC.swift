@@ -48,6 +48,7 @@ class ConfirmPersonalDataVC: UIViewController, ViewSpecificController {
     
     var name = ""
     var birthday = ""
+    fileprivate var nextScreen: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,14 +63,49 @@ class ConfirmPersonalDataVC: UIViewController, ViewSpecificController {
         
 
     }
+    
+    
     @IBAction func confirmData(_ sender: Any) {
         let userData = ["name": self.name,"birthDate": self.birthday]
+        
+        // save data into database (FirebaseData it`s my own class singelton)
         FirebaseData.sharedInstanse.saveIntoFirebase(userData: userData)
+        
+        DispatchQueue.global(qos: .default).async {
+            
+            if RCValues.sharedInstance.fetchComplete == true{
+                self.changeScreen()
+            }
+            
+            RCValues.sharedInstance.loadingDoneCallback = self.changeScreen
+ 
+        }
+        
     }
     
 }
 
 extension ConfirmPersonalDataVC{
+    
+    func changeScreen(){
+        
+        let screen = RCValues.sharedInstance.int(forKey: .requiredSubscription)
+
+        if screen == 1{
+            self.nextScreen = "subscriptionScreen"
+        }
+        else{
+            self.nextScreen = "nonSubscriptionScreen"
+        }
+        
+        DispatchQueue.main.async {
+            
+            print(self.nextScreen!)
+            //                let storyboard = UIStoryboard(name: "Auth", bundle: nil)
+            //                let loginViewController = storyboard.instantiateViewController(withIdentifier: "WelcomNavigationController") as! WelcomNavigationController
+            //                self.present(loginViewController, animated: true)
+        }
+    }
     
     private func getZodiacSign(_ birthDate: String){
         
@@ -122,9 +158,7 @@ extension ConfirmPersonalDataVC{
             break
         }
         
-        view().setZodiacSign(with: zodiac)
-
-        
+        view().setZodiacSign(with: zodiac)   
     }
     
 
