@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Vx-Yp-3O7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Subscription View Controller-->
+        <scene sceneID="ggd-ew-1Ji">
+            <objects>
+                <viewController storyboardIdentifier="subscriptionScreen" id="8Vx-Yp-3O7" customClass="SubscriptionViewController" customModule="listenyourheart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gZj-cW-T2u" customClass="SubscriptionView" customModule="listenyourheart" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="285" height="426"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SubscriptionHeart" translatesAutoresizingMaskIntoConstraints="NO" id="j1b-sY-hMw">
+                                <rect key="frame" x="0.0" y="0.0" width="285" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="OJ3-cf-sN6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription benefits:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMk-ds-GIO">
+                                <rect key="frame" x="59" y="272" width="167.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lgi-Kz-TgY">
+                                <rect key="frame" x="12" y="320.5" width="261" height="92"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="10A-q1-YdG">
+                                        <rect key="frame" x="0.0" y="0.0" width="261" height="24"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="24" placeholderIntrinsicHeight="24" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="MbC-yt-xPf">
+                                                <rect key="frame" x="0.0" y="0.0" width="27.5" height="24"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="New predictions on demand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVv-ix-xZg">
+                                                <rect key="frame" x="37.5" y="0.0" width="223.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GrW-oB-RaQ">
+                                        <rect key="frame" x="0.0" y="34" width="261" height="24"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="24" placeholderIntrinsicHeight="24" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="YIT-Rb-thZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="27.5" height="24"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="New predictions on demand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Io-TS-RT4">
+                                                <rect key="frame" x="37.5" y="0.0" width="223.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5fa-cN-Ces">
+                                        <rect key="frame" x="0.0" y="68" width="261" height="24"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="24" placeholderIntrinsicHeight="24" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="3zt-Jo-VxF">
+                                                <rect key="frame" x="0.0" y="0.0" width="27.5" height="24"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="New predictions on demand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgM-IS-rPa">
+                                                <rect key="frame" x="37.5" y="0.0" width="223.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rjC-gF-EQA" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Lgi-Kz-TgY" secondAttribute="bottom" id="EqC-Xp-hBh"/>
+                            <constraint firstItem="j1b-sY-hMw" firstAttribute="top" secondItem="gZj-cW-T2u" secondAttribute="top" id="WaY-Hp-ymV"/>
+                            <constraint firstItem="Lgi-Kz-TgY" firstAttribute="centerX" secondItem="rjC-gF-EQA" secondAttribute="centerX" id="Z0p-S2-W20"/>
+                            <constraint firstItem="j1b-sY-hMw" firstAttribute="leading" secondItem="rjC-gF-EQA" secondAttribute="leading" id="bz2-jF-PiT"/>
+                            <constraint firstItem="j1b-sY-hMw" firstAttribute="centerX" secondItem="nMk-ds-GIO" secondAttribute="centerX" id="dja-D1-pu3"/>
+                            <constraint firstItem="nMk-ds-GIO" firstAttribute="centerX" secondItem="rjC-gF-EQA" secondAttribute="centerX" id="f0A-Pv-GjM"/>
+                            <constraint firstItem="nMk-ds-GIO" firstAttribute="top" secondItem="j1b-sY-hMw" secondAttribute="bottom" constant="22" id="nmh-ha-Wrt"/>
+                            <constraint firstItem="Lgi-Kz-TgY" firstAttribute="leading" secondItem="rjC-gF-EQA" secondAttribute="leading" constant="12" id="nxb-9v-tJg"/>
+                            <constraint firstItem="Lgi-Kz-TgY" firstAttribute="top" secondItem="nMk-ds-GIO" secondAttribute="bottom" constant="28" id="pae-t4-EkH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rjC-gF-EQA"/>
+                        <connections>
+                            <outlet property="doneButton" destination="t9M-us-tfG" id="QmW-mG-FAG"/>
+                            <outlet property="imageView" destination="j1b-sY-hMw" id="e55-jj-uau"/>
+                            <outlet property="titleLabel" destination="nMk-ds-GIO" id="svF-R4-USm"/>
+                        </connections>
+                    </view>
+                    <size key="freeformSize" width="285" height="426"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UVu-Rf-m80" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="t9M-us-tfG" customClass="CustomButton" customModule="listenyourheart" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="SUBSCRIBE $0,49 PER WEEK"/>
+                    <connections>
+                        <action selector="doneButtonDidPress:" destination="8Vx-Yp-3O7" eventType="touchUpInside" id="LCo-yN-BGQ"/>
+                    </connections>
+                </button>
+            </objects>
+            <point key="canvasLocation" x="-186" y="142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SubscriptionHeart" width="271" height="237"/>
+        <image name="heart" width="27" height="24"/>
+    </resources>
+</document>

@@ -101,6 +101,19 @@ extension ConfirmPersonalDataVC{
         DispatchQueue.main.async {
             
             print(self.nextScreen!)
+            
+            let contentController = SubscriptionViewController.instantiateInitialFromStoryboard()
+            // Здесь можно настроить контроллер
+            
+            let onboardingController = OnboardingViewController.instantiateInitialFromStoryboard()
+            onboardingController.embedController(contentController,
+                                                 actionsDatasource: contentController)
+
+            let modalController = onboardingController.wrapInModalContainer()
+
+            self.present(modalController, animated: true)
+            
+            
             //                let storyboard = UIStoryboard(name: "Auth", bundle: nil)
             //                let loginViewController = storyboard.instantiateViewController(withIdentifier: "WelcomNavigationController") as! WelcomNavigationController
             //                self.present(loginViewController, animated: true)

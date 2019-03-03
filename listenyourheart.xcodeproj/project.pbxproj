@@ -11,6 +11,18 @@
 		F708B84D220CA4EA006A165F /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F708B84C220CA4EA006A165F /* UserProfile.swift */; };
 		F708B84F220CA6EE006A165F /* FirebaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F708B84E220CA6EE006A165F /* FirebaseData.swift */; };
 		F708B851220CBCE4006A165F /* RCValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = F708B850220CBCE4006A165F /* RCValues.swift */; };
+		F7135AE7222B24FC002EAF6E /* InsertChildToUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7135AE6222B24FC002EAF6E /* InsertChildToUiViewController.swift */; };
+		F7135AE9222B2579002EAF6E /* AddConstraintsToUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7135AE8222B2579002EAF6E /* AddConstraintsToUIView.swift */; };
+		F7135AEB222BC7B1002EAF6E /* MainSubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7135AEA222BC7B1002EAF6E /* MainSubscriptionView.swift */; };
+		F74901A62214AFE2005D025E /* SubscriptionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74901A52214AFE2005D025E /* SubscriptionViewController.storyboard */; };
+		F74901AA221C8587005D025E /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74901A9221C8587005D025E /* SubscriptionView.swift */; };
+		F74901AC221C8624005D025E /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74901AB221C8624005D025E /* Storyboardable.swift */; };
+		F74901B0221C8F00005D025E /* OnboardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74901AF221C8F00005D025E /* OnboardingViewController.storyboard */; settings = {ASSET_TAGS = (OnBoardingViewControlle, ); }; };
+		F74901B2221C8F10005D025E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74901B1221C8F10005D025E /* OnboardingViewController.swift */; };
+		F74901B4221C8F1E005D025E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74901B3221C8F1E005D025E /* OnboardingView.swift */; };
+		F74901B822287BBB005D025E /* MainSubscriptionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74901B722287BBB005D025E /* MainSubscriptionViewController.storyboard */; };
+		F74901BA22287BCF005D025E /* MainSubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74901B922287BCF005D025E /* MainSubscriptionViewController.swift */; };
+		F74901BC22288C87005D025E /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74901BB22288C87005D025E /* SubscriptionViewController.swift */; };
 		F78BA93521FE460300D0A676 /* ConfirmPersonalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78BA93421FE460300D0A676 /* ConfirmPersonalDataView.swift */; };
 		F78BA93721FE462000D0A676 /* ConfirmPersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78BA93621FE462000D0A676 /* ConfirmPersonalDataVC.swift */; };
 		F7DDC4C921F5A3F700D0D928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DDC4C821F5A3F700D0D928 /* AppDelegate.swift */; };
@@ -39,6 +51,18 @@
 		F708B84C220CA4EA006A165F /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		F708B84E220CA6EE006A165F /* FirebaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseData.swift; sourceTree = "<group>"; };
 		F708B850220CBCE4006A165F /* RCValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCValues.swift; sourceTree = "<group>"; };
+		F7135AE6222B24FC002EAF6E /* InsertChildToUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertChildToUiViewController.swift; sourceTree = "<group>"; };
+		F7135AE8222B2579002EAF6E /* AddConstraintsToUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddConstraintsToUIView.swift; sourceTree = "<group>"; };
+		F7135AEA222BC7B1002EAF6E /* MainSubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSubscriptionView.swift; sourceTree = "<group>"; };
+		F74901A52214AFE2005D025E /* SubscriptionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubscriptionViewController.storyboard; sourceTree = SOURCE_ROOT; };
+		F74901A9221C8587005D025E /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = SOURCE_ROOT; };
+		F74901AB221C8624005D025E /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		F74901AF221C8F00005D025E /* OnboardingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingViewController.storyboard; sourceTree = "<group>"; };
+		F74901B1221C8F10005D025E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		F74901B3221C8F1E005D025E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		F74901B722287BBB005D025E /* MainSubscriptionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainSubscriptionViewController.storyboard; sourceTree = "<group>"; };
+		F74901B922287BCF005D025E /* MainSubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSubscriptionViewController.swift; sourceTree = "<group>"; };
+		F74901BB22288C87005D025E /* SubscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
 		F78BA93421FE460300D0A676 /* ConfirmPersonalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPersonalDataView.swift; sourceTree = "<group>"; };
 		F78BA93621FE462000D0A676 /* ConfirmPersonalDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPersonalDataVC.swift; sourceTree = "<group>"; };
 		F7DDC4C521F5A3F700D0D928 /* listenyourheart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = listenyourheart.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,12 +116,61 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F7135AEC222BCA6C002EAF6E /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				F74901B722287BBB005D025E /* MainSubscriptionViewController.storyboard */,
+				F74901B922287BCF005D025E /* MainSubscriptionViewController.swift */,
+				F7135AEA222BC7B1002EAF6E /* MainSubscriptionView.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		F74901AD221C8B22005D025E /* CustomizeView */ = {
+			isa = PBXGroup;
+			children = (
+				F74901AB221C8624005D025E /* Storyboardable.swift */,
+				F7EA0BA721F892BC003E3A2A /* ViewSpecificController.swift */,
+				F7EA0BB621F98C3C003E3A2A /* CustomButton.swift */,
+				F7135AE6222B24FC002EAF6E /* InsertChildToUiViewController.swift */,
+				F7135AE8222B2579002EAF6E /* AddConstraintsToUIView.swift */,
+			);
+			path = CustomizeView;
+			sourceTree = "<group>";
+		};
+		F74901AE221C8B43005D025E /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				F708B84E220CA6EE006A165F /* FirebaseData.swift */,
+				F708B850220CBCE4006A165F /* RCValues.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		F74901B5221C8F79005D025E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F74901AF221C8F00005D025E /* OnboardingViewController.storyboard */,
+				F74901B1221C8F10005D025E /* OnboardingViewController.swift */,
+				F74901B3221C8F1E005D025E /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F74901B622287B73005D025E /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				F7DDC4EB21F648A900D0D928 /* Model */,
+				F7DDC4EA21F648A000D0D928 /* View */,
+				F7DDC4E921F6488F00D0D928 /* Controller */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
 		F7DDC4BC21F5A3F700D0D928 = {
 			isa = PBXGroup;
 			children = (
-				F708B850220CBCE4006A165F /* RCValues.swift */,
-				F708B84E220CA6EE006A165F /* FirebaseData.swift */,
-				F708B84C220CA4EA006A165F /* UserProfile.swift */,
+				F7EA0BA621F89294003E3A2A /* Extension */,
 				F7DDC4C721F5A3F700D0D928 /* listenyourheart */,
 				F7DDC4C621F5A3F700D0D928 /* Products */,
 				F58E26219668346FA537D0F7 /* Pods */,
@@ -192,9 +265,9 @@
 		F7DDC4E821F6487700D0D928 /* Subscription */ = {
 			isa = PBXGroup;
 			children = (
-				F7DDC4EB21F648A900D0D928 /* Model */,
-				F7DDC4EA21F648A000D0D928 /* View */,
-				F7DDC4E921F6488F00D0D928 /* Controller */,
+				F74901B5221C8F79005D025E /* Onboarding */,
+				F7135AEC222BCA6C002EAF6E /* Modal */,
+				F74901B622287B73005D025E /* Content */,
 			);
 			path = Subscription;
 			sourceTree = "<group>";
@@ -202,6 +275,7 @@
 		F7DDC4E921F6488F00D0D928 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F74901BB22288C87005D025E /* SubscriptionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -209,15 +283,19 @@
 		F7DDC4EA21F648A000D0D928 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F74901A52214AFE2005D025E /* SubscriptionViewController.storyboard */,
+				F74901A9221C8587005D025E /* SubscriptionView.swift */,
 			);
-			path = View;
+			name = View;
+			path = ../../../View;
 			sourceTree = "<group>";
 		};
 		F7DDC4EB21F648A900D0D928 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			name = Model;
+			path = ../../../Model;
 			sourceTree = "<group>";
 		};
 		F7DDC4EC21F648BB00D0D928 /* Controller */ = {
@@ -236,10 +314,8 @@
 			isa = PBXGroup;
 			children = (
 				F7EA0BAB21F911EE003E3A2A /* Slider */,
-				F7EA0BA621F89294003E3A2A /* Extension */,
 				F7DDC4DC21F5ECB400D0D928 /* Auth.storyboard */,
 				F7EA0BA421F88B01003E3A2A /* WelcomView.swift */,
-				F7EA0BB621F98C3C003E3A2A /* CustomButton.swift */,
 				F7EA0BBA21F9CA97003E3A2A /* PersonalDataView.swift */,
 				F78BA93421FE460300D0A676 /* ConfirmPersonalDataView.swift */,
 			);
@@ -249,6 +325,7 @@
 		F7DDC4EE21F648CD00D0D928 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F708B84C220CA4EA006A165F /* UserProfile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -279,7 +356,8 @@
 		F7EA0BA621F89294003E3A2A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F7EA0BA721F892BC003E3A2A /* ViewSpecificController.swift */,
+				F74901AD221C8B22005D025E /* CustomizeView */,
+				F74901AE221C8B43005D025E /* Firebase */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -323,6 +401,7 @@
 			attributes = {
 				KnownAssetTags = (
 					1,
+					OnBoardingViewControlle,
 				);
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
@@ -367,9 +446,12 @@
 				F7DDC4DB21F5A69600D0D928 /* GoogleService-Info.plist in Resources */,
 				F7DDC4D321F5A3F900D0D928 /* LaunchScreen.storyboard in Resources */,
 				F7DDC4DD21F5ECB400D0D928 /* Auth.storyboard in Resources */,
+				F74901B822287BBB005D025E /* MainSubscriptionViewController.storyboard in Resources */,
 				F7DDC4D021F5A3F900D0D928 /* Assets.xcassets in Resources */,
+				F74901B0221C8F00005D025E /* OnboardingViewController.storyboard in Resources */,
 				F7DDC4CE21F5A3F700D0D928 /* Predictions.storyboard in Resources */,
 				F7EA0BAF21F91251003E3A2A /* Slide.xib in Resources */,
+				F74901A62214AFE2005D025E /* SubscriptionViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,15 +521,24 @@
 				F7EA0BA821F892BC003E3A2A /* ViewSpecificController.swift in Sources */,
 				F708B84D220CA4EA006A165F /* UserProfile.swift in Sources */,
 				F708B84F220CA6EE006A165F /* FirebaseData.swift in Sources */,
+				F7135AE9222B2579002EAF6E /* AddConstraintsToUIView.swift in Sources */,
 				F7EA0BAA21F9068E003E3A2A /* WelcomNavigationController.swift in Sources */,
 				F7EA0BB721F98C3C003E3A2A /* CustomButton.swift in Sources */,
+				F74901B4221C8F1E005D025E /* OnboardingView.swift in Sources */,
+				F7135AEB222BC7B1002EAF6E /* MainSubscriptionView.swift in Sources */,
+				F74901B2221C8F10005D025E /* OnboardingViewController.swift in Sources */,
 				F7EA0BBB21F9CA97003E3A2A /* PersonalDataView.swift in Sources */,
 				F7DDC4DF21F5EE2500D0D928 /* WelcomViewController.swift in Sources */,
 				F7EA0BA321F838D3003E3A2A /* Authorization.swift in Sources */,
 				F78BA93521FE460300D0A676 /* ConfirmPersonalDataView.swift in Sources */,
+				F74901AA221C8587005D025E /* SubscriptionView.swift in Sources */,
+				F74901AC221C8624005D025E /* Storyboardable.swift in Sources */,
+				F7135AE7222B24FC002EAF6E /* InsertChildToUiViewController.swift in Sources */,
 				F7DDC4CB21F5A3F700D0D928 /* ViewController.swift in Sources */,
 				F78BA93721FE462000D0A676 /* ConfirmPersonalDataVC.swift in Sources */,
 				F7EA0BA521F88B01003E3A2A /* WelcomView.swift in Sources */,
+				F74901BA22287BCF005D025E /* MainSubscriptionViewController.swift in Sources */,
+				F74901BC22288C87005D025E /* SubscriptionViewController.swift in Sources */,
 				F7DDC4C921F5A3F700D0D928 /* AppDelegate.swift in Sources */,
 				F708B851220CBCE4006A165F /* RCValues.swift in Sources */,
 				F7EA0BAD21F91207003E3A2A /* Slide.swift in Sources */,

@@ -23,7 +23,6 @@ class FirebaseData{
     func saveIntoFirebase(userData: [String: Any]){
         
         guard let uid = Auth.auth().currentUser?.uid else {return}
-        //let userData = ["name": userName,"email": userEmail]
         
         userProfile = UserProfile(data: userData)
         
