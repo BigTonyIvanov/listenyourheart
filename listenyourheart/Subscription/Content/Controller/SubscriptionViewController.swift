@@ -26,6 +26,10 @@ class SubscriptionViewController: UIViewController, ViewSpecificController, Stor
 }
 
 extension SubscriptionViewController: OnboardingViewControllerDatasource {
+    var agreementView: UIView {
+        return view().policyPrivacy
+    }
+    
     var supportingViews: [UIView] {
         return [view().doneButton]
     }

@@ -23,5 +23,6 @@ class SubscriptionView: UIView{
     
     // MARK: - Text
     @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet weak var policyPrivacy: UIView!
     @IBOutlet weak var doneButton: UIButton!
 }

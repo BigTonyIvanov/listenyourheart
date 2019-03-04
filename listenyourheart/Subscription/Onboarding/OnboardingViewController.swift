@@ -10,6 +10,7 @@ import UIKit
 
 protocol OnboardingViewControllerDatasource {
     var supportingViews: [UIView] { get }
+    var agreementView: UIView { get }
 }
 
 class OnboardingViewController: UIViewController, Storyboardable, ViewSpecificController {
@@ -21,8 +22,11 @@ class OnboardingViewController: UIViewController, Storyboardable, ViewSpecificCo
         insertFullframeChildController(controller,
                                        toView: view().contentContainerView,
                                        index: 0)
+
+        view().agreementView = actionsDatasource.agreementView
         view().supportingViews = actionsDatasource.supportingViews
     }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let buttonsDatasource  = segue.destination as? OnboardingViewControllerDatasource {

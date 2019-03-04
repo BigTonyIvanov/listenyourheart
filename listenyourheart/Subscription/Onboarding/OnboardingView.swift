@@ -12,12 +12,20 @@ class OnboardingView: UIView {
     
     @IBOutlet weak var contentContainerView: UIView!
     @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var userAgreementText: UIView!
     
     var supportingViews: [UIView] = [] {
         didSet {
             for view in supportingViews {
                 self.stackView.addArrangedSubview(view)
             }
+        }
+    }
+    
+    var agreementView: UIView = UIView(){
+        didSet {
+            self.userAgreementText.addSubview(agreementView)
+            self.userAgreementText.pinToBounds(agreementView)
         }
     }
 }
