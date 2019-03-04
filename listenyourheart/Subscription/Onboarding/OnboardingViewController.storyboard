@@ -25,20 +25,20 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1y-sv-Hmc">
-                                                <rect key="frame" x="50" y="25" width="275" height="426"/>
+                                                <rect key="frame" x="50" y="35" width="275" height="426"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="426" id="DCz-R4-E9z"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" tag="1" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xjb-6U-EyH">
-                                                <rect key="frame" x="15" y="511" width="345" height="54"/>
+                                                <rect key="frame" x="15" y="491" width="345" height="54"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="54" id="xtC-Uy-a1E"/>
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8A6-JP-p5o">
-                                                <rect key="frame" x="0.0" y="575" width="375" height="346"/>
+                                                <rect key="frame" x="0.0" y="555" width="375" height="346"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="346" id="Nz5-og-gRV"/>
@@ -48,9 +48,9 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="900" id="0su-Sx-p1R"/>
-                                            <constraint firstItem="Xjb-6U-EyH" firstAttribute="top" secondItem="A1y-sv-Hmc" secondAttribute="bottom" constant="60" id="7wq-Sf-b5c"/>
+                                            <constraint firstItem="Xjb-6U-EyH" firstAttribute="top" secondItem="A1y-sv-Hmc" secondAttribute="bottom" constant="30" id="7wq-Sf-b5c"/>
                                             <constraint firstItem="Xjb-6U-EyH" firstAttribute="leading" secondItem="cj5-ue-SJ5" secondAttribute="leading" constant="15" id="8bF-0P-Dvi"/>
-                                            <constraint firstItem="A1y-sv-Hmc" firstAttribute="top" secondItem="cj5-ue-SJ5" secondAttribute="top" constant="25" id="A4P-EX-hDL"/>
+                                            <constraint firstItem="A1y-sv-Hmc" firstAttribute="top" secondItem="cj5-ue-SJ5" secondAttribute="top" constant="35" id="A4P-EX-hDL"/>
                                             <constraint firstItem="A1y-sv-Hmc" firstAttribute="leading" secondItem="cj5-ue-SJ5" secondAttribute="leading" constant="50" id="MXi-O9-uIB"/>
                                             <constraint firstItem="Xjb-6U-EyH" firstAttribute="centerX" secondItem="cj5-ue-SJ5" secondAttribute="centerX" id="OlC-PJ-hbd"/>
                                             <constraint firstItem="8A6-JP-p5o" firstAttribute="centerX" secondItem="cj5-ue-SJ5" secondAttribute="centerX" id="eaw-Qq-rON"/>
