@@ -23,6 +23,7 @@
 		F74901B822287BBB005D025E /* MainSubscriptionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74901B722287BBB005D025E /* MainSubscriptionViewController.storyboard */; };
 		F74901BA22287BCF005D025E /* MainSubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74901B922287BCF005D025E /* MainSubscriptionViewController.swift */; };
 		F74901BC22288C87005D025E /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74901BB22288C87005D025E /* SubscriptionViewController.swift */; };
+		F75791D02236C22400943031 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75791CF2236C22400943031 /* DownloadViewController.swift */; };
 		F78BA93521FE460300D0A676 /* ConfirmPersonalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78BA93421FE460300D0A676 /* ConfirmPersonalDataView.swift */; };
 		F78BA93721FE462000D0A676 /* ConfirmPersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78BA93621FE462000D0A676 /* ConfirmPersonalDataVC.swift */; };
 		F7DDC4C921F5A3F700D0D928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DDC4C821F5A3F700D0D928 /* AppDelegate.swift */; };
@@ -63,6 +64,7 @@
 		F74901B722287BBB005D025E /* MainSubscriptionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainSubscriptionViewController.storyboard; sourceTree = "<group>"; };
 		F74901B922287BCF005D025E /* MainSubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSubscriptionViewController.swift; sourceTree = "<group>"; };
 		F74901BB22288C87005D025E /* SubscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
+		F75791CF2236C22400943031 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 		F78BA93421FE460300D0A676 /* ConfirmPersonalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPersonalDataView.swift; sourceTree = "<group>"; };
 		F78BA93621FE462000D0A676 /* ConfirmPersonalDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPersonalDataVC.swift; sourceTree = "<group>"; };
 		F7DDC4C521F5A3F700D0D928 /* listenyourheart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = listenyourheart.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +143,7 @@
 		F74901AE221C8B43005D025E /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				F7EA0BA221F838D3003E3A2A /* Authorization.swift */,
 				F708B84E220CA6EE006A165F /* FirebaseData.swift */,
 				F708B850220CBCE4006A165F /* RCValues.swift */,
 			);
@@ -302,7 +305,6 @@
 			isa = PBXGroup;
 			children = (
 				F7DDC4DE21F5EE2500D0D928 /* WelcomViewController.swift */,
-				F7EA0BA221F838D3003E3A2A /* Authorization.swift */,
 				F7EA0BA921F9068E003E3A2A /* WelcomNavigationController.swift */,
 				F7EA0BB821F9CA4E003E3A2A /* PersonalDataVC.swift */,
 				F78BA93621FE462000D0A676 /* ConfirmPersonalDataVC.swift */,
@@ -334,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				F7DDC4CA21F5A3F700D0D928 /* ViewController.swift */,
+				F75791CF2236C22400943031 /* DownloadViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				F7DDC4CB21F5A3F700D0D928 /* ViewController.swift in Sources */,
 				F78BA93721FE462000D0A676 /* ConfirmPersonalDataVC.swift in Sources */,
 				F7EA0BA521F88B01003E3A2A /* WelcomView.swift in Sources */,
+				F75791D02236C22400943031 /* DownloadViewController.swift in Sources */,
 				F74901BA22287BCF005D025E /* MainSubscriptionViewController.swift in Sources */,
 				F74901BC22288C87005D025E /* SubscriptionViewController.swift in Sources */,
 				F7DDC4C921F5A3F700D0D928 /* AppDelegate.swift in Sources */,

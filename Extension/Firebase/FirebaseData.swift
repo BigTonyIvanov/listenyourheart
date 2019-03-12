@@ -14,6 +14,10 @@ class FirebaseData{
     
     static let sharedInstanse = FirebaseData()
     private var userProfile: UserProfile?
+    var ref: DatabaseReference!
+    
+    var loadingDoneCallback: (() -> Void)?
+    var fetchComplete = false
     
     private init(){
         //  Add Authorisation in the future
@@ -39,10 +43,19 @@ class FirebaseData{
         }
     }
     
-    func getRemouteConfig(by value: String) -> Int{
+    func getUserData(by uid: String){
         
-        
-        
-        return 0
+            self.ref = Database.database().reference()
+            self.ref.child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+                // Get user value
+                let value = snapshot.value as? [String: Any]
+                self.userProfile = UserProfile(data: value!)
+                
+            }) { (error) in
+                print(error.localizedDescription)
+            }
+
     }
+    
+    
 }

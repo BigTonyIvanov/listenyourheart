@@ -113,10 +113,6 @@ extension ConfirmPersonalDataVC{
 
             self.present(modalController, animated: true)
             
-            
-            //                let storyboard = UIStoryboard(name: "Auth", bundle: nil)
-            //                let loginViewController = storyboard.instantiateViewController(withIdentifier: "WelcomNavigationController") as! WelcomNavigationController
-            //                self.present(loginViewController, animated: true)
         }
     }
     
