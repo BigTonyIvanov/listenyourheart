@@ -10,17 +10,16 @@ import Foundation
 import Firebase
 
 class Authorization{
+    
     static var sharedInstance = Authorization()
+    
     var authDoneCallBack: (() -> Void)?
     var authComplete = false
-    var isRegister: Bool = false
-    var currUser: UserProfile!
+    var uid: String?
     
-    private init(){
-        self.signInAnonimously()
-    }
+    private init(){}
     
-    func signInAnonimously(){
+    func signInAnonimously(completion: @escaping ()->()){
         
         Auth.auth().signInAnonymously { (authResult, error) in
             if let error = error{
@@ -29,23 +28,9 @@ class Authorization{
             }
             
             let user = authResult!.user
+            self.uid = user.uid     
             
-            DispatchQueue.main.async {
-                
-                
-                let ref = Database.database().reference()
-                ref.child("users").child(user.uid).observeSingleEvent(of: .value, with: { (snapshot) in
-                    // Get user value
-                    let value = snapshot.value as? [String: Any]
-                    self.currUser = UserProfile(data: value!)
-                    
-                }) { (error) in
-                    print(error.localizedDescription)
-                }
-            }
-           
-            
-            
+            completion()
             self.authComplete = true
             self.authDoneCallBack?()
         

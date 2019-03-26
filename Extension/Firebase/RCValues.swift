@@ -53,7 +53,6 @@ class RCValues {
             print("Retrieved values from the cloud!")
             print("Our app's primary color is \(RemoteConfig.remoteConfig().configValue(forKey: "requiredSubscription").stringValue ?? "undefined")")
             
-            print("-----------получил RCValues")
             self?.fetchComplete = true
             self?.loadingDoneCallback?()
         }

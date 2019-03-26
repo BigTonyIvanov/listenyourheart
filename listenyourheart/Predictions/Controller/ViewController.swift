@@ -14,9 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if Authorization.sharedInstance.currUser.buy == true{
-            
-        }
+      
     }
 }
 

@@ -14,6 +14,7 @@
 		F7135AE7222B24FC002EAF6E /* InsertChildToUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7135AE6222B24FC002EAF6E /* InsertChildToUiViewController.swift */; };
 		F7135AE9222B2579002EAF6E /* AddConstraintsToUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7135AE8222B2579002EAF6E /* AddConstraintsToUIView.swift */; };
 		F7135AEB222BC7B1002EAF6E /* MainSubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7135AEA222BC7B1002EAF6E /* MainSubscriptionView.swift */; };
+		F7163E19224039A500FD6F2F /* PreloadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7163E18224039A500FD6F2F /* PreloadData.swift */; };
 		F74901A62214AFE2005D025E /* SubscriptionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74901A52214AFE2005D025E /* SubscriptionViewController.storyboard */; };
 		F74901AA221C8587005D025E /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74901A9221C8587005D025E /* SubscriptionView.swift */; };
 		F74901AC221C8624005D025E /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74901AB221C8624005D025E /* Storyboardable.swift */; };
@@ -55,6 +56,7 @@
 		F7135AE6222B24FC002EAF6E /* InsertChildToUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertChildToUiViewController.swift; sourceTree = "<group>"; };
 		F7135AE8222B2579002EAF6E /* AddConstraintsToUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddConstraintsToUIView.swift; sourceTree = "<group>"; };
 		F7135AEA222BC7B1002EAF6E /* MainSubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSubscriptionView.swift; sourceTree = "<group>"; };
+		F7163E18224039A500FD6F2F /* PreloadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadData.swift; sourceTree = "<group>"; };
 		F74901A52214AFE2005D025E /* SubscriptionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubscriptionViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		F74901A9221C8587005D025E /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = SOURCE_ROOT; };
 		F74901AB221C8624005D025E /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				F7EA0BA221F838D3003E3A2A /* Authorization.swift */,
 				F708B84E220CA6EE006A165F /* FirebaseData.swift */,
 				F708B850220CBCE4006A165F /* RCValues.swift */,
+				F7163E18224039A500FD6F2F /* PreloadData.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				F7EA0BA321F838D3003E3A2A /* Authorization.swift in Sources */,
 				F78BA93521FE460300D0A676 /* ConfirmPersonalDataView.swift in Sources */,
 				F74901AA221C8587005D025E /* SubscriptionView.swift in Sources */,
+				F7163E19224039A500FD6F2F /* PreloadData.swift in Sources */,
 				F74901AC221C8624005D025E /* Storyboardable.swift in Sources */,
 				F7135AE7222B24FC002EAF6E /* InsertChildToUiViewController.swift in Sources */,
 				F7DDC4CB21F5A3F700D0D928 /* ViewController.swift in Sources */,

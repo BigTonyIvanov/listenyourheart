@@ -15,24 +15,10 @@ class WelcomViewController: UIViewController , ViewSpecificController{
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if Authorization.sharedInstance.authComplete {
-            
-            goNextScreen()
-        }else{
-        
-            Authorization.sharedInstance.signInAnonimously()
-            Authorization.sharedInstance.authDoneCallBack = goNextScreen
-        }
-        
+  
     }
     
-    func goNextScreen(){
-        print("Authorization is completed")
-    }
-    
-    
-    
+ 
     // Hidden Navigation controller
     override func viewWillAppear(_ animated: Bool)
     {
