@@ -415,6 +415,7 @@
 				TargetAttributes = {
 					F7DDC4C421F5A3F700D0D928 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -706,7 +707,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Tony-Co.listenyourheart";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -726,7 +727,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Tony-Co.listenyourheart";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

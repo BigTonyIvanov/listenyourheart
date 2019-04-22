@@ -25,9 +25,8 @@ class PreloadData {
         queue.async {
             Authorization.sharedInstance.signInAnonimously {
                 DispatchQueue.main.async {
-                    print("Анонимный пользователь зарегистрирован")
+                    print("--- Anonim user is registered")
                 }
-                
                 self.semaphore.signal()
             }
         }
@@ -35,15 +34,14 @@ class PreloadData {
       
         queue.async {
             self.semaphore.wait()
-            print("---Start get info!!!")
+            print("--- Start get info!!!")
             FirebaseData.sharedInstanse.getUserData(completion: {
                 self.semaphore.signal()
             })
         }
 
         queue.async {
-            self.semaphore.wait()
-            print("--- work with RcValues")
+            print("--- Work with RcValues")
             if RCValues.sharedInstance.fetchComplete == true{
                 complition()
             }

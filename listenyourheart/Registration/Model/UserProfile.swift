@@ -12,18 +12,24 @@ struct UserProfile {
     let name: String?
     let birthDate: String?
     let id: Int?
-    var buy: Bool? = false
+    var buy: Bool?
     
     init(data: [String: Any]) {
         let id = data["id"] as? Int
         let name = data["name"] as? String
-        let email = data["birthDate"] as? String
+        let birthDate = data["birthDate"] as? String
         let buy = data["buy"] as? Bool
         
         
         self.id = id
         self.name = name
-        self.birthDate = email
-        self.buy = buy
+        self.birthDate = birthDate
+        
+        if let newBuy = buy{
+            self.buy = newBuy
+        }else{
+            self.buy = false
+        }
+        
     }
 }

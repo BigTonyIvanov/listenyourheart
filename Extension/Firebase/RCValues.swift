@@ -28,7 +28,7 @@ class RCValues {
     
     func loadDefaultValues() {
         let appDefaults: [String: Any?] = [
-            ValueKey.requiredSubscription.rawValue: 0
+            ValueKey.requiredSubscription.rawValue: false
         ]
         RemoteConfig.remoteConfig().setDefaults(appDefaults as? [String: NSObject])
     }
@@ -51,7 +51,7 @@ class RCValues {
             // 2
             RemoteConfig.remoteConfig().activateFetched()
             print("Retrieved values from the cloud!")
-            print("Our app's primary color is \(RemoteConfig.remoteConfig().configValue(forKey: "requiredSubscription").stringValue ?? "undefined")")
+            print("Our app's you need buying or no: \(RemoteConfig.remoteConfig().configValue(forKey: "requiredSubscription").stringValue ?? "undefined")")
             
             self?.fetchComplete = true
             self?.loadingDoneCallback?()

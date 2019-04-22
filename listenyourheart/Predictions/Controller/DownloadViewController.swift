@@ -25,16 +25,20 @@ class DownloadViewController: UIViewController {
     
 
     func goToNextScreen(){
-        if FirebaseData.sharedInstanse.isCreated != true{
+
+        if FirebaseData.sharedInstanse.isCreated == false{
             checkLoggedIn()
         }else{
             
-            print("---------User is register")
-            if FirebaseData.sharedInstanse.userProfile?.buy == true{
+            print("--- User is register")
+            let isBuying = FirebaseData.sharedInstanse.userProfile?.buy
+            if isBuying == true{
                 performSegue(withIdentifier: "showPersonalData", sender: self)
             }else{
-                if RCValues.sharedInstance.int(forKey: .requiredSubscription) == 0{
+                let needBuying = RCValues.sharedInstance.bool(forKey: .requiredSubscription)
+                if needBuying == true{
                     let contentController = SubscriptionViewController.instantiateInitialFromStoryboard()
+                    
                     // Здесь можно настроить контроллер
 
                     let onboardingController = OnboardingViewController.instantiateInitialFromStoryboard()
@@ -44,7 +48,10 @@ class DownloadViewController: UIViewController {
                     let modalController = onboardingController.wrapInModalContainer()
 
                     self.present(modalController, animated: true)
+                }else{
+                    performSegue(withIdentifier: "showContent", sender: self)
                 }
+     
 
             }
             

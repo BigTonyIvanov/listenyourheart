@@ -22,17 +22,16 @@ class FirebaseData{
     var fetchComplete = false
     
     private init(){
-
-        
+  
     }
     
     func saveIntoFirebase(userData: [String: Any]){
         
-        guard let uid = Auth.auth().currentUser?.uid else {return}
+        guard let uid = Authorization.sharedInstance.uid else {return}
         
         userProfile = UserProfile(data: userData)
         
-        let userData = ["name": userProfile?.name, "birthDate": userProfile?.birthDate]
+        let userData = ["name": userProfile?.name, "birthDate": userProfile?.birthDate, "buy": userProfile?.buy?.description ?? "none"]
         let values = [uid: userData]
         
         Database.database().reference(withPath: "users").updateChildValues(values) { (error, _) in
@@ -41,7 +40,7 @@ class FirebaseData{
                 print(error)
                 return
             }
-            print("Successfully saved user into firebase database")
+            print("--- Successfully saved user into firebase database")
         }
     }
     
