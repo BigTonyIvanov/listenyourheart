@@ -49,7 +49,7 @@ class DownloadViewController: UIViewController {
 
                     self.present(modalController, animated: true)
                 }else{
-                    performSegue(withIdentifier: "showContent", sender: self)
+                    performSegue(withIdentifier: "pampam", sender: self)
                 }
      
 

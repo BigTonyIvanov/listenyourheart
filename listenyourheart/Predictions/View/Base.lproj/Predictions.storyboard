@@ -10,20 +10,40 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Your lucky luck-->
+        <scene sceneID="t7t-kM-b7d">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="listenyourheart" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="Z5f-R4-tGY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a4L-fr-de1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.069538421931588212" blue="0.076951678250886446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W1P-fA-Msm">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W1P-fA-Msm" firstAttribute="bottom" secondItem="1xj-ou-0Ud" secondAttribute="bottom" id="BRz-33-2IH"/>
+                            <constraint firstItem="W1P-fA-Msm" firstAttribute="top" secondItem="1xj-ou-0Ud" secondAttribute="top" id="BsK-uz-0Ek"/>
+                            <constraint firstItem="W1P-fA-Msm" firstAttribute="leading" secondItem="1xj-ou-0Ud" secondAttribute="leading" id="UDQ-SW-uAr"/>
+                            <constraint firstItem="W1P-fA-Msm" firstAttribute="trailing" secondItem="1xj-ou-0Ud" secondAttribute="trailing" id="hrA-kv-9R8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1xj-ou-0Ud"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Your lucky luck" id="GWt-68-GZs">
+                        <barButtonItem key="rightBarButtonItem" id="Xge-Lk-3gK">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4EP-0C-bMc">
+                                <rect key="frame" x="335" y="11" width="24" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="crown"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hV0-fj-LHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="820" y="114"/>
+            <point key="canvasLocation" x="1732" y="1296.7016491754123"/>
         </scene>
         <!--Download View Controller-->
         <scene sceneID="ZtH-bk-I6x">
@@ -40,15 +60,36 @@
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Mv0-n3-3QF"/>
+                        <viewLayoutGuide key="safeArea" id="uVm-ZP-Uo8"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="showContent" id="8dk-bt-79Y"/>
+                        <segue destination="otX-kN-c9v" kind="show" identifier="pampam" id="Gub-bF-Ck4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YQC-hm-wMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-145" y="114"/>
+            <point key="canvasLocation" x="792.79999999999995" y="113.79310344827587"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="efg-k8-s2J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="otX-kN-c9v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nqV-DG-sJh">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Z5f-R4-tGY" kind="relationship" relationship="rootViewController" id="yYj-c1-yZI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WB7-bU-x1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="1297"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="crown" width="24" height="17"/>
+    </resources>
 </document>

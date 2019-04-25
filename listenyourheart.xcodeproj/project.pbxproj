@@ -11,6 +11,8 @@
 		F708B84D220CA4EA006A165F /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F708B84C220CA4EA006A165F /* UserProfile.swift */; };
 		F708B84F220CA6EE006A165F /* FirebaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F708B84E220CA6EE006A165F /* FirebaseData.swift */; };
 		F708B851220CBCE4006A165F /* RCValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = F708B850220CBCE4006A165F /* RCValues.swift */; };
+		F7104EAC226EF4FB00D8F6F3 /* LuckyLuckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7104EAB226EF4FB00D8F6F3 /* LuckyLuckView.swift */; };
+		F7104EAE226EF79D00D8F6F3 /* LuckyLuckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7104EAD226EF79D00D8F6F3 /* LuckyLuckViewController.swift */; };
 		F7135AE7222B24FC002EAF6E /* InsertChildToUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7135AE6222B24FC002EAF6E /* InsertChildToUiViewController.swift */; };
 		F7135AE9222B2579002EAF6E /* AddConstraintsToUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7135AE8222B2579002EAF6E /* AddConstraintsToUIView.swift */; };
 		F7135AEB222BC7B1002EAF6E /* MainSubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7135AEA222BC7B1002EAF6E /* MainSubscriptionView.swift */; };
@@ -28,7 +30,6 @@
 		F78BA93521FE460300D0A676 /* ConfirmPersonalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78BA93421FE460300D0A676 /* ConfirmPersonalDataView.swift */; };
 		F78BA93721FE462000D0A676 /* ConfirmPersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78BA93621FE462000D0A676 /* ConfirmPersonalDataVC.swift */; };
 		F7DDC4C921F5A3F700D0D928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DDC4C821F5A3F700D0D928 /* AppDelegate.swift */; };
-		F7DDC4CB21F5A3F700D0D928 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DDC4CA21F5A3F700D0D928 /* ViewController.swift */; };
 		F7DDC4CE21F5A3F700D0D928 /* Predictions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DDC4CC21F5A3F700D0D928 /* Predictions.storyboard */; };
 		F7DDC4D021F5A3F900D0D928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DDC4CF21F5A3F900D0D928 /* Assets.xcassets */; };
 		F7DDC4D321F5A3F900D0D928 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DDC4D121F5A3F900D0D928 /* LaunchScreen.storyboard */; };
@@ -53,6 +54,8 @@
 		F708B84C220CA4EA006A165F /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		F708B84E220CA6EE006A165F /* FirebaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseData.swift; sourceTree = "<group>"; };
 		F708B850220CBCE4006A165F /* RCValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCValues.swift; sourceTree = "<group>"; };
+		F7104EAB226EF4FB00D8F6F3 /* LuckyLuckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyLuckView.swift; sourceTree = "<group>"; };
+		F7104EAD226EF79D00D8F6F3 /* LuckyLuckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyLuckViewController.swift; sourceTree = "<group>"; };
 		F7135AE6222B24FC002EAF6E /* InsertChildToUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertChildToUiViewController.swift; sourceTree = "<group>"; };
 		F7135AE8222B2579002EAF6E /* AddConstraintsToUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddConstraintsToUIView.swift; sourceTree = "<group>"; };
 		F7135AEA222BC7B1002EAF6E /* MainSubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSubscriptionView.swift; sourceTree = "<group>"; };
@@ -71,7 +74,6 @@
 		F78BA93621FE462000D0A676 /* ConfirmPersonalDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPersonalDataVC.swift; sourceTree = "<group>"; };
 		F7DDC4C521F5A3F700D0D928 /* listenyourheart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = listenyourheart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DDC4C821F5A3F700D0D928 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7DDC4CA21F5A3F700D0D928 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F7DDC4CD21F5A3F700D0D928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Predictions.storyboard; sourceTree = "<group>"; };
 		F7DDC4CF21F5A3F900D0D928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7DDC4D221F5A3F900D0D928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -338,8 +340,8 @@
 		F7DDC4EF21F6491C00D0D928 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F7DDC4CA21F5A3F700D0D928 /* ViewController.swift */,
 				F75791CF2236C22400943031 /* DownloadViewController.swift */,
+				F7104EAD226EF79D00D8F6F3 /* LuckyLuckViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -348,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				F7DDC4CC21F5A3F700D0D928 /* Predictions.storyboard */,
+				F7104EAB226EF4FB00D8F6F3 /* LuckyLuckView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -495,7 +498,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-listenyourheart/Pods-listenyourheart-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-listenyourheart/Pods-listenyourheart-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
@@ -514,7 +517,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-listenyourheart/Pods-listenyourheart-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-listenyourheart/Pods-listenyourheart-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -542,12 +545,13 @@
 				F7163E19224039A500FD6F2F /* PreloadData.swift in Sources */,
 				F74901AC221C8624005D025E /* Storyboardable.swift in Sources */,
 				F7135AE7222B24FC002EAF6E /* InsertChildToUiViewController.swift in Sources */,
-				F7DDC4CB21F5A3F700D0D928 /* ViewController.swift in Sources */,
 				F78BA93721FE462000D0A676 /* ConfirmPersonalDataVC.swift in Sources */,
 				F7EA0BA521F88B01003E3A2A /* WelcomView.swift in Sources */,
 				F75791D02236C22400943031 /* DownloadViewController.swift in Sources */,
 				F74901BA22287BCF005D025E /* MainSubscriptionViewController.swift in Sources */,
 				F74901BC22288C87005D025E /* SubscriptionViewController.swift in Sources */,
+				F7104EAE226EF79D00D8F6F3 /* LuckyLuckViewController.swift in Sources */,
+				F7104EAC226EF4FB00D8F6F3 /* LuckyLuckView.swift in Sources */,
 				F7DDC4C921F5A3F700D0D928 /* AppDelegate.swift in Sources */,
 				F708B851220CBCE4006A165F /* RCValues.swift in Sources */,
 				F7EA0BAD21F91207003E3A2A /* Slide.swift in Sources */,

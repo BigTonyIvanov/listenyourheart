@@ -12,5 +12,6 @@ class Slide: UIView {
     
     
     @IBOutlet weak var invitedText: UILabel!
+
     
 }
