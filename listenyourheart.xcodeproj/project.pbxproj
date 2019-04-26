@@ -13,6 +13,8 @@
 		F708B851220CBCE4006A165F /* RCValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = F708B850220CBCE4006A165F /* RCValues.swift */; };
 		F7104EAC226EF4FB00D8F6F3 /* LuckyLuckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7104EAB226EF4FB00D8F6F3 /* LuckyLuckView.swift */; };
 		F7104EAE226EF79D00D8F6F3 /* LuckyLuckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7104EAD226EF79D00D8F6F3 /* LuckyLuckViewController.swift */; };
+		F7104EC82271F81300D8F6F3 /* SliderPredictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7104EC72271F81300D8F6F3 /* SliderPredictions.swift */; };
+		F7104ECA2271F81F00D8F6F3 /* SliderPredictions.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7104EC92271F81F00D8F6F3 /* SliderPredictions.xib */; };
 		F7135AE7222B24FC002EAF6E /* InsertChildToUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7135AE6222B24FC002EAF6E /* InsertChildToUiViewController.swift */; };
 		F7135AE9222B2579002EAF6E /* AddConstraintsToUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7135AE8222B2579002EAF6E /* AddConstraintsToUIView.swift */; };
 		F7135AEB222BC7B1002EAF6E /* MainSubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7135AEA222BC7B1002EAF6E /* MainSubscriptionView.swift */; };
@@ -56,6 +58,8 @@
 		F708B850220CBCE4006A165F /* RCValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCValues.swift; sourceTree = "<group>"; };
 		F7104EAB226EF4FB00D8F6F3 /* LuckyLuckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyLuckView.swift; sourceTree = "<group>"; };
 		F7104EAD226EF79D00D8F6F3 /* LuckyLuckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyLuckViewController.swift; sourceTree = "<group>"; };
+		F7104EC72271F81300D8F6F3 /* SliderPredictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderPredictions.swift; sourceTree = "<group>"; };
+		F7104EC92271F81F00D8F6F3 /* SliderPredictions.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderPredictions.xib; sourceTree = "<group>"; };
 		F7135AE6222B24FC002EAF6E /* InsertChildToUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertChildToUiViewController.swift; sourceTree = "<group>"; };
 		F7135AE8222B2579002EAF6E /* AddConstraintsToUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddConstraintsToUIView.swift; sourceTree = "<group>"; };
 		F7135AEA222BC7B1002EAF6E /* MainSubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSubscriptionView.swift; sourceTree = "<group>"; };
@@ -351,6 +355,8 @@
 			children = (
 				F7DDC4CC21F5A3F700D0D928 /* Predictions.storyboard */,
 				F7104EAB226EF4FB00D8F6F3 /* LuckyLuckView.swift */,
+				F7104EC72271F81300D8F6F3 /* SliderPredictions.swift */,
+				F7104EC92271F81F00D8F6F3 /* SliderPredictions.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -462,6 +468,7 @@
 				F7DDC4CE21F5A3F700D0D928 /* Predictions.storyboard in Resources */,
 				F7EA0BAF21F91251003E3A2A /* Slide.xib in Resources */,
 				F74901A62214AFE2005D025E /* SubscriptionViewController.storyboard in Resources */,
+				F7104ECA2271F81F00D8F6F3 /* SliderPredictions.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +545,7 @@
 				F7135AEB222BC7B1002EAF6E /* MainSubscriptionView.swift in Sources */,
 				F74901B2221C8F10005D025E /* OnboardingViewController.swift in Sources */,
 				F7EA0BBB21F9CA97003E3A2A /* PersonalDataView.swift in Sources */,
+				F7104EC82271F81300D8F6F3 /* SliderPredictions.swift in Sources */,
 				F7DDC4DF21F5EE2500D0D928 /* WelcomViewController.swift in Sources */,
 				F7EA0BA321F838D3003E3A2A /* Authorization.swift in Sources */,
 				F78BA93521FE460300D0A676 /* ConfirmPersonalDataView.swift in Sources */,

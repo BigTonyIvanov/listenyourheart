@@ -14,7 +14,7 @@
         <scene sceneID="t7t-kM-b7d">
             <objects>
                 <viewController id="Z5f-R4-tGY" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="a4L-fr-de1">
+                    <view key="view" contentMode="scaleToFill" id="a4L-fr-de1" customClass="LuckyLuckView" customModule="listenyourheart" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -30,6 +30,9 @@
                             <constraint firstItem="W1P-fA-Msm" firstAttribute="trailing" secondItem="1xj-ou-0Ud" secondAttribute="trailing" id="hrA-kv-9R8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1xj-ou-0Ud"/>
+                        <connections>
+                            <outlet property="scrollView" destination="W1P-fA-Msm" id="akb-DB-DYX"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Your lucky luck" id="GWt-68-GZs">
                         <barButtonItem key="rightBarButtonItem" id="Xge-Lk-3gK">

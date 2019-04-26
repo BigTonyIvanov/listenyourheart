@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SliderPredictions" customModule="listenyourheart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BoI-fy-skc">
+                    <rect key="frame" x="162.5" y="206" width="50" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.80065981220000004" green="0.050606195499999999" blue="0.06028463941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Karl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPp-yk-KLu">
+                    <rect key="frame" x="160" y="232" width="55" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use it today for dating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgG-NC-Ots">
+                    <rect key="frame" x="102.5" y="505" width="170" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.069538421929999997" blue="0.076951678250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lgG-NC-Ots" firstAttribute="top" secondItem="BPp-yk-KLu" secondAttribute="bottom" constant="233" id="4WG-7h-ugr"/>
+                <constraint firstItem="lgG-NC-Ots" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="5iL-qV-V6A"/>
+                <constraint firstItem="BPp-yk-KLu" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="8tk-X0-0gb"/>
+                <constraint firstItem="BoI-fy-skc" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="DNe-7U-f51"/>
+                <constraint firstItem="BPp-yk-KLu" firstAttribute="top" secondItem="BoI-fy-skc" secondAttribute="bottom" constant="5" id="EHg-1F-9lu"/>
+                <constraint firstItem="BoI-fy-skc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="186" id="Hl0-dN-tFL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="additInfo" destination="lgG-NC-Ots" id="YcZ-55-zdK"/>
+                <outlet property="title" destination="BoI-fy-skc" id="k2g-gP-x0r"/>
+                <outlet property="value" destination="BPp-yk-KLu" id="lFF-bh-AK0"/>
+            </connections>
+        </view>
+    </objects>
+</document>

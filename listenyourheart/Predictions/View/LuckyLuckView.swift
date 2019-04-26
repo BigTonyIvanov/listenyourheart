@@ -8,19 +8,54 @@
 
 import UIKit
 
-class LuckyLuckView: UIView {
+class LuckyLuckView: UIView, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
+    {
+        didSet{
+            scrollView.delegate = self
+        }
+    }
+    
+    var slides:[SliderPredictions] = [];
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        slides = self.createSlides()
+        self.setupSlideScrollView(slides: slides)
+    }
  
     
-//    func createSlides() -> [Slide] {
-//
-//        let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-//        slide1
-//        slide1.labelTitle.text = "A real-life bear"
-//        slide1.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
-//
-//
-//
-//        return [slide1]
-//    }
+    func createSlides() -> [SliderPredictions] {
+
+        let slide1:SliderPredictions = Bundle.main.loadNibNamed("SliderPredictions", owner: self, options: nil)?.first as! SliderPredictions
+        slide1.title.text = "Name:"
+        slide1.value.text = "Karl"
+        slide1.additInfo.text = "Use it today for dating"
+        
+        let slide2:SliderPredictions = Bundle.main.loadNibNamed("SliderPredictions", owner: self, options: nil)?.first as! SliderPredictions
+        slide2.title.text = "Time:"
+        slide2.value.text = "19:58"
+        slide2.additInfo.text = ""
+        
+        let slide3:SliderPredictions = Bundle.main.loadNibNamed("SliderPredictions", owner: self, options: nil)?.first as! SliderPredictions
+        slide3.title.text = "Color:"
+        slide3.value.text = "Black"
+        slide3.additInfo.text = ""
+
+        return [slide1, slide2, slide3]
+    }
+    
+    func setupSlideScrollView(slides : [SliderPredictions]) {
+        scrollView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
+        scrollView.contentSize = CGSize(width: self.frame.width * CGFloat(slides.count), height: self.frame.height)
+        scrollView.isPagingEnabled = true
+        
+        for i in 0 ..< slides.count {
+            slides[i].frame = CGRect(x: self.frame.width * CGFloat(i), y: 0, width: self.frame.width, height: self.frame.height)
+            scrollView.addSubview(slides[i])
+        }
+    }
+    
+  
 }

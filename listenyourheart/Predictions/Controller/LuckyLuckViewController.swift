@@ -10,13 +10,20 @@
 import UIKit
 import Firebase
 
-class LuckyLuckViewController: UIViewController {
+class LuckyLuckViewController: UIViewController, ViewSpecificController {
     
-//    typealias RootView = LuckyLuckView
-    
+    typealias RootView = LuckyLuckView
+
+    var slides:[SliderPredictions] = [];
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+//        pageControl.numberOfPages = slides.count
+//        pageControl.currentPage = 0
+        //view.bringSubview(toFront: pageControl)
         
         
     }
