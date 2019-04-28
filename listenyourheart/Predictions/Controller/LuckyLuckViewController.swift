@@ -16,6 +16,12 @@ class LuckyLuckViewController: UIViewController, ViewSpecificController {
 
     var slides:[SliderPredictions] = [];
 
+    @IBAction func pressedSegmentedControl(_ sender: UISegmentedControl) {
+        
+        view().chaneSelectedPage(to: sender.selectedSegmentIndex)
+        
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

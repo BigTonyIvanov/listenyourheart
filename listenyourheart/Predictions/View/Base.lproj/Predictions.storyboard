@@ -13,25 +13,42 @@
         <!--Your lucky luck-->
         <scene sceneID="t7t-kM-b7d">
             <objects>
-                <viewController id="Z5f-R4-tGY" sceneMemberID="viewController">
+                <viewController id="Z5f-R4-tGY" customClass="LuckyLuckViewController" customModule="listenyourheart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a4L-fr-de1" customClass="LuckyLuckView" customModule="listenyourheart" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KSj-MZ-7uo">
+                                <rect key="frame" x="15" y="74" width="345" height="29"/>
+                                <segments>
+                                    <segment title="Name"/>
+                                    <segment title="Time"/>
+                                    <segment title="Color"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.069538421929999997" blue="0.076951678250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="pressedSegmentedControl:" destination="Z5f-R4-tGY" eventType="valueChanged" id="c3n-Nl-CUP"/>
+                                    <action selector="pressedSegmentedControl:" destination="4Ql-iN-JIy" eventType="valueChanged" id="eEj-dx-msc"/>
+                                </connections>
+                            </segmentedControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W1P-fA-Msm">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="117" width="375" height="550"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="KSj-MZ-7uo" firstAttribute="leading" secondItem="1xj-ou-0Ud" secondAttribute="leading" constant="15" id="22m-LC-vFb"/>
                             <constraint firstItem="W1P-fA-Msm" firstAttribute="bottom" secondItem="1xj-ou-0Ud" secondAttribute="bottom" id="BRz-33-2IH"/>
-                            <constraint firstItem="W1P-fA-Msm" firstAttribute="top" secondItem="1xj-ou-0Ud" secondAttribute="top" id="BsK-uz-0Ek"/>
                             <constraint firstItem="W1P-fA-Msm" firstAttribute="leading" secondItem="1xj-ou-0Ud" secondAttribute="leading" id="UDQ-SW-uAr"/>
+                            <constraint firstItem="W1P-fA-Msm" firstAttribute="top" secondItem="KSj-MZ-7uo" secondAttribute="bottom" constant="15" id="Xrj-nf-Crs"/>
                             <constraint firstItem="W1P-fA-Msm" firstAttribute="trailing" secondItem="1xj-ou-0Ud" secondAttribute="trailing" id="hrA-kv-9R8"/>
+                            <constraint firstItem="KSj-MZ-7uo" firstAttribute="centerX" secondItem="1xj-ou-0Ud" secondAttribute="centerX" id="m1u-Of-Ymw"/>
+                            <constraint firstItem="KSj-MZ-7uo" firstAttribute="top" secondItem="1xj-ou-0Ud" secondAttribute="top" constant="10" id="qF6-TD-0a5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1xj-ou-0Ud"/>
                         <connections>
                             <outlet property="scrollView" destination="W1P-fA-Msm" id="akb-DB-DYX"/>
+                            <outlet property="segmentedControl" destination="KSj-MZ-7uo" id="ET1-SU-Kwd"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Your lucky luck" id="GWt-68-GZs">
@@ -45,8 +62,9 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hV0-fj-LHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4Ql-iN-JIy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1732" y="1296.7016491754123"/>
+            <point key="canvasLocation" x="1732" y="1295.8020989505249"/>
         </scene>
         <!--Download View Controller-->
         <scene sceneID="ZtH-bk-I6x">

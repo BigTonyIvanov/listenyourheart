@@ -17,32 +17,31 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BoI-fy-skc">
-                    <rect key="frame" x="162.5" y="206" width="50" height="21"/>
+                    <rect key="frame" x="162.5" y="150" width="50" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.80065981220000004" green="0.050606195499999999" blue="0.06028463941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Karl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPp-yk-KLu">
-                    <rect key="frame" x="160" y="232" width="55" height="40"/>
+                    <rect key="frame" x="160" y="176" width="55" height="40"/>
                     <fontDescription key="fontDescription" type="system" pointSize="33"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use it today for dating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgG-NC-Ots">
-                    <rect key="frame" x="102.5" y="505" width="170" height="21"/>
+                    <rect key="frame" x="102.5" y="449" width="170" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="0.069538421929999997" blue="0.076951678250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="lgG-NC-Ots" firstAttribute="top" secondItem="BPp-yk-KLu" secondAttribute="bottom" constant="233" id="4WG-7h-ugr"/>
                 <constraint firstItem="lgG-NC-Ots" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="5iL-qV-V6A"/>
                 <constraint firstItem="BPp-yk-KLu" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="8tk-X0-0gb"/>
                 <constraint firstItem="BoI-fy-skc" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="DNe-7U-f51"/>
                 <constraint firstItem="BPp-yk-KLu" firstAttribute="top" secondItem="BoI-fy-skc" secondAttribute="bottom" constant="5" id="EHg-1F-9lu"/>
-                <constraint firstItem="BoI-fy-skc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="186" id="Hl0-dN-tFL"/>
+                <constraint firstItem="BoI-fy-skc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="130" id="Hl0-dN-tFL"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
