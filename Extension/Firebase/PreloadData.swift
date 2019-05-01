@@ -26,6 +26,7 @@ class PreloadData {
             Authorization.sharedInstance.signInAnonimously {
                 DispatchQueue.main.async {
                     print("--- Anonim user is registered")
+                    print("--- UID user is" , Authorization.sharedInstance.uid!)
                 }
                 self.semaphore.signal()
             }

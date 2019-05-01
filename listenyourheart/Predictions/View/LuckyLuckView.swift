@@ -85,15 +85,9 @@ extension LuckyLuckView: UIScrollViewDelegate{
     }
     
     func chaneSelectedPage(to index: Int){
-        
-//        self.scrollView.contentOffset.x =
-//            self.frame.width * CGFloat(index)
-//        print(self.frame.width)
-//        print(self.frame.height)
-//
-        self.scrollView.setContentOffset(CGPoint(x: self.frame.width * CGFloat(index), y: self.scrollView.contentOffset.y), animated: true)
-//
-//        print(self.frame.width)
-//        print(self.frame.height)
+
+        self.scrollView.setContentOffset(CGPoint(x: self.frame.width * CGFloat(index),
+                                                 y: self.scrollView.contentOffset.y),
+                                         animated: true)
     }
 }
