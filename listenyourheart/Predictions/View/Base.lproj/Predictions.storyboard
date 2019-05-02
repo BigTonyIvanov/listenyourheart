@@ -59,13 +59,8 @@
                                 <state key="normal" image="crown"/>
                                 <connections>
                                     <action selector="checkSubscribe:" destination="Z5f-R4-tGY" eventType="touchUpInside" id="pgJ-ah-hpZ"/>
-                                    <action selector="subscribe:" destination="a4L-fr-de1" eventType="touchUpInside" id="3mB-g8-krq"/>
-                                    <action selector="subscribe:" destination="4Ql-iN-JIy" eventType="touchUpInside" id="LNN-kB-Lk7"/>
                                 </connections>
                             </button>
-                            <connections>
-                                <action selector="subscribe:" destination="Z5f-R4-tGY" id="EbP-Vb-aJG"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>

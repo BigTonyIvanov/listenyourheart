@@ -66,7 +66,7 @@ class ConfirmPersonalDataVC: UIViewController, ViewSpecificController {
     
     
     @IBAction func confirmData(_ sender: Any) {
-        let userData = ["name": self.name,"birthDate": self.birthday]
+        let userData = ["name": self.name,"birthDate": self.birthday, "buy": "false"]
         
         // save data into database (FirebaseData it`s my own class singelton)
         FirebaseData.sharedInstanse.saveIntoFirebase(userData: userData)
