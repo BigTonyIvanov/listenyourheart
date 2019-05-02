@@ -51,12 +51,11 @@ class LuckyLuckView: UIView {
     
     func setupSlideScrollView(slides : [SliderPredictions]) {
         scrollView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
-        scrollView.contentSize = CGSize(width: self.frame.width * CGFloat(slides.count), height: self.frame.height)
+        scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width * CGFloat(slides.count), height: 1.0)
         scrollView.isPagingEnabled = true
         scrollView.isUserInteractionEnabled = true
-        
         for i in 0 ..< slides.count {
-            slides[i].frame = CGRect(x: self.frame.width * CGFloat(i), y: 0, width: self.frame.width, height: self.frame.height)
+            slides[i].frame = CGRect(x: UIScreen.main.bounds.width * CGFloat(i), y: 0, width: self.frame.width, height: self.frame.height)
             scrollView.addSubview(slides[i])
         }
     }

@@ -84,7 +84,7 @@
                         <viewLayoutGuide key="safeArea" id="uVm-ZP-Uo8"/>
                     </view>
                     <connections>
-                        <segue destination="otX-kN-c9v" kind="show" identifier="pampam" id="Gub-bF-Ck4"/>
+                        <segue destination="otX-kN-c9v" kind="show" identifier="showPersonalData" id="Gub-bF-Ck4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YQC-hm-wMy" userLabel="First Responder" sceneMemberID="firstResponder"/>

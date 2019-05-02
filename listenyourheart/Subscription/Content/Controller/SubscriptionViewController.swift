@@ -21,7 +21,11 @@ class SubscriptionViewController: UIViewController, ViewSpecificController, Stor
     }
 
     @IBAction func doneButtonDidPress(_ sender: Any) {
-        dismiss(animated: true)
+        let alert = UIAlertController(title: "Notification", message: "Ooo, you are lucky! \n Today it`s free for you", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            }))
+        self.present(alert, animated: true, completion: nil)
+//        dismiss(animated: true)
     }
 }
 

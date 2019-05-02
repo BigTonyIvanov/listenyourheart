@@ -46,10 +46,11 @@ class DownloadViewController: UIViewController {
                                                          actionsDatasource: contentController)
 
                     let modalController = onboardingController.wrapInModalContainer()
+                    modalController.view().closeButton.isHidden = true
 
                     self.present(modalController, animated: true)
                 }else{
-                    performSegue(withIdentifier: "pampam", sender: self)
+                    performSegue(withIdentifier: "showPersonalData", sender: self)
                 }
      
 

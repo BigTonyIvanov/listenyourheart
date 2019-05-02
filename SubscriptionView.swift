@@ -26,3 +26,5 @@ class SubscriptionView: UIView{
     @IBOutlet weak var policyPrivacy: UIView!
     @IBOutlet weak var doneButton: UIButton!
 }
+
+

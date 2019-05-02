@@ -89,18 +89,9 @@ extension ConfirmPersonalDataVC{
     
     func changeScreen(){
         
-        let screen = RCValues.sharedInstance.int(forKey: .requiredSubscription)
-
-        if screen == 1{
-            self.nextScreen = "subscriptionScreen"
-        }
-        else{
-            self.nextScreen = "nonSubscriptionScreen"
-        }
+        let needBuying = RCValues.sharedInstance.bool(forKey: .requiredSubscription)
         
         DispatchQueue.main.async {
-            
-            print(self.nextScreen!)
             
             let contentController = SubscriptionViewController.instantiateInitialFromStoryboard()
             // Здесь можно настроить контроллер
@@ -110,6 +101,14 @@ extension ConfirmPersonalDataVC{
                                                  actionsDatasource: contentController)
 
             let modalController = onboardingController.wrapInModalContainer()
+           
+            let btn = modalController.view().closeButton
+            
+            if needBuying == true{
+                btn?.isHidden = true
+            }else{
+//                btn?.addTarget(self, action: #selector(modalController.openSubscriptionInfo), for: .touchUpInside)
+            }
 
             self.present(modalController, animated: true)
             

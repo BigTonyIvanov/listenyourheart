@@ -11,6 +11,7 @@ import UIKit
 class MainSubscriptionViewController: UIViewController, Storyboardable, ViewSpecificController {
     typealias RootView = MainSubscriptionView
     
+    
     public func embedController(_ controller: UIViewController) {
         insertFullframeChildController(controller, index: 0)
     }
@@ -23,8 +24,16 @@ class MainSubscriptionViewController: UIViewController, Storyboardable, ViewSpec
 // MARK: - Actions
 extension MainSubscriptionViewController {
     @IBAction private func closeDidPress(_ sender: Any) {
+        print("Pressed button tuped")
         dismiss(animated: true)
     }
+    
+//    @objc func openSubscriptionInfo(sender: UIButton!){
+//        let storyboard = UIStoryboard(name: "Predictions", bundle: nil)
+//        let predictionsViewController = storyboard.instantiateViewController(withIdentifier: "DownloadViewController") as! DownloadViewController
+//        
+//        self.present(predictionsViewController, animated: true)
+//    }
 }
 
 extension UIViewController {
