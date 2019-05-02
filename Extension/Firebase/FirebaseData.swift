@@ -55,6 +55,8 @@ class FirebaseData{
                 if value == nil{
                     return
                 }
+                
+                print("--- Print ifo from database", value)
                 self.userProfile = UserProfile(data: value!)
                 self.isCreated = true
                 completion()

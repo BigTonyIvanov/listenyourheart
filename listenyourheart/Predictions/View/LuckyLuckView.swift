@@ -17,6 +17,7 @@ class LuckyLuckView: UIView {
     }
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+
     
     var slides:[SliderPredictions] = [];
 

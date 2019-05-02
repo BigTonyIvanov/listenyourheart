@@ -19,18 +19,32 @@ class LuckyLuckViewController: UIViewController, ViewSpecificController {
     @IBAction func pressedSegmentedControl(_ sender: UISegmentedControl) {
         
         view().chaneSelectedPage(to: sender.selectedSegmentIndex)
-        
-
     }
+    
+    
+    @IBAction func checkSubscribe(_ sender: Any) {
+        
+            let contentController = SubscriptionViewController.instantiateInitialFromStoryboard()
+            
+            // Здесь можно настроить контроллер
+            
+            let onboardingController = OnboardingViewController.instantiateInitialFromStoryboard()
+            onboardingController.embedController(contentController,
+                                                 actionsDatasource: contentController)
+            
+            let modalController = onboardingController.wrapInModalContainer()
+            
+            self.present(modalController, animated: true)
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-//        pageControl.numberOfPages = slides.count
-//        pageControl.currentPage = 0
-        //view.bringSubview(toFront: pageControl)
-        
-        
+        let isBuying = FirebaseData.sharedInstanse.userProfile?.buy
+        if isBuying == true{
+            self.navigationItem.rightBarButtonItem = nil
+        }
     }
 }

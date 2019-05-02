@@ -57,7 +57,15 @@
                                 <rect key="frame" x="335" y="11" width="24" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="crown"/>
+                                <connections>
+                                    <action selector="checkSubscribe:" destination="Z5f-R4-tGY" eventType="touchUpInside" id="pgJ-ah-hpZ"/>
+                                    <action selector="subscribe:" destination="a4L-fr-de1" eventType="touchUpInside" id="3mB-g8-krq"/>
+                                    <action selector="subscribe:" destination="4Ql-iN-JIy" eventType="touchUpInside" id="LNN-kB-Lk7"/>
+                                </connections>
                             </button>
+                            <connections>
+                                <action selector="subscribe:" destination="Z5f-R4-tGY" id="EbP-Vb-aJG"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -74,13 +82,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1Bk-W5-ShH">
-                                <rect key="frame" x="177" y="323" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1Bk-W5-ShH">
+                                <rect key="frame" x="177.5" y="333.5" width="20" height="20"/>
                                 <color key="color" red="1" green="0.29165025067637107" blue="0.24870376693210672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Bk-W5-ShH" firstAttribute="centerX" secondItem="uVm-ZP-Uo8" secondAttribute="centerX" id="ZUT-8w-dGJ"/>
+                            <constraint firstItem="1Bk-W5-ShH" firstAttribute="centerY" secondItem="uVm-ZP-Uo8" secondAttribute="centerY" id="yRZ-n0-cpP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uVm-ZP-Uo8"/>
                     </view>
                     <connections>

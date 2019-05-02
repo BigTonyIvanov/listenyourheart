@@ -11,25 +11,20 @@ import Foundation
 struct UserProfile {
     let name: String?
     let birthDate: String?
-    let id: Int?
+    let id: Int? = nil
     var buy: Bool?
     
     init(data: [String: Any]) {
-        let id = data["id"] as? Int
+        //let id = data["id"] as? Int
         let name = data["name"] as? String
         let birthDate = data["birthDate"] as? String
-        let buy = data["buy"] as? Bool
+        let buy = NSString(string:(data["buy"] as?  String)!).boolValue
         
         
-        self.id = id
+//        self.id = id
         self.name = name
         self.birthDate = birthDate
-        
-        if let newBuy = buy{
-            self.buy = newBuy
-        }else{
-            self.buy = false
-        }
+        self.buy = buy
         
     }
 }
