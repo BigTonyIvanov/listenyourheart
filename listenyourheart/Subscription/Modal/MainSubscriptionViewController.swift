@@ -27,13 +27,7 @@ extension MainSubscriptionViewController {
         print("Pressed button tuped")
         dismiss(animated: true)
     }
-    
-//    @objc func openSubscriptionInfo(sender: UIButton!){
-//        let storyboard = UIStoryboard(name: "Predictions", bundle: nil)
-//        let predictionsViewController = storyboard.instantiateViewController(withIdentifier: "DownloadViewController") as! DownloadViewController
-//        
-//        self.present(predictionsViewController, animated: true)
-//    }
+
 }
 
 extension UIViewController {

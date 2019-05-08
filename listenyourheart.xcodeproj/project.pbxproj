@@ -182,7 +182,6 @@
 		F7DDC4BC21F5A3F700D0D928 = {
 			isa = PBXGroup;
 			children = (
-				F7EA0BA621F89294003E3A2A /* Extension */,
 				F7DDC4C721F5A3F700D0D928 /* listenyourheart */,
 				F7DDC4C621F5A3F700D0D928 /* Products */,
 				F58E26219668346FA537D0F7 /* Pods */,
@@ -201,6 +200,7 @@
 		F7DDC4C721F5A3F700D0D928 /* listenyourheart */ = {
 			isa = PBXGroup;
 			children = (
+				F7EA0BA621F89294003E3A2A /* Extension */,
 				F7DDC4E121F6472500D0D928 /* Application */,
 				F7DDC4E821F6487700D0D928 /* Subscription */,
 				F7DDC4E721F6486C00D0D928 /* Registration */,
@@ -374,7 +374,8 @@
 				F74901AD221C8B22005D025E /* CustomizeView */,
 				F74901AE221C8B43005D025E /* Firebase */,
 			);
-			path = Extension;
+			name = Extension;
+			path = ../Extension;
 			sourceTree = "<group>";
 		};
 		F7EA0BAB21F911EE003E3A2A /* Slider */ = {

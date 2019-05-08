@@ -109,7 +109,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ToP-eZ-1He" customClass="CustomButton" customModule="listenyourheart" customModuleProvider="target">
-                                <rect key="frame" x="15" y="494" width="290" height="44"/>
+                                <rect key="frame" x="15" y="508" width="290" height="30"/>
                                 <state key="normal" title="NEXT"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="heightButton">
@@ -301,6 +301,9 @@
                                                         <rect key="frame" x="0.0" y="40" width="115" height="115"/>
                                                     </imageView>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="xsm-Cj-3f3" firstAttribute="top" secondItem="dgn-Vi-Wcc" secondAttribute="bottom" constant="20" id="aZ6-2C-9k8"/>
+                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tQo-Ow-s02">
                                                 <rect key="frame" x="160" y="0.0" width="115" height="155"/>
@@ -322,6 +325,9 @@
                                                         <rect key="frame" x="0.0" y="40" width="115" height="115"/>
                                                     </imageView>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="7O0-Wx-GoE" firstAttribute="top" secondItem="f1q-TH-gMf" secondAttribute="bottom" constant="20" id="t4Z-c2-nbg"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                     </stackView>

@@ -15,13 +15,11 @@ struct UserProfile {
     var buy: Bool?
     
     init(data: [String: Any]) {
-        //let id = data["id"] as? Int
         let name = data["name"] as? String
         let birthDate = data["birthDate"] as? String
         let buy = NSString(string:(data["buy"] as?  String)!).boolValue
         
         
-//        self.id = id
         self.name = name
         self.birthDate = birthDate
         self.buy = buy

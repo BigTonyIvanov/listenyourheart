@@ -11,9 +11,9 @@ import UIKit
 class SubscriptionViewController: UIViewController, ViewSpecificController, Storyboardable {
     typealias RootView = SubscriptionView
     
-    // Container view добавляет констрейнты на основе Autoresizing mask, а они конфликтуют с
-    // внутренними размерами контента. Проблема решается в коде: в контроллере-контенте нужно
-    // указать, что на него не влияют констрейнты из Autoresizing mask:
+    // Container view add constraints based on Autoresizing mask, but they conflict with
+    // internal size of content. The problem solve in code: in Content Controller need
+    // say,that constraints from Autoresizing mask influence on it
     override func loadView() {
         super.loadView()
         
@@ -25,7 +25,6 @@ class SubscriptionViewController: UIViewController, ViewSpecificController, Stor
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
             }))
         self.present(alert, animated: true, completion: nil)
-//        dismiss(animated: true)
     }
 }
 

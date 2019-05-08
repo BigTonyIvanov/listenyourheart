@@ -14,13 +14,11 @@ class DownloadViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         let loader = PreloadData()
         loader.loadData {
             self.goToNextScreen()
         }
-        
-        
+   
     }
     
 
@@ -38,9 +36,6 @@ class DownloadViewController: UIViewController {
                 let needBuying = RCValues.sharedInstance.bool(forKey: .requiredSubscription)
                 if needBuying == true{
                     let contentController = SubscriptionViewController.instantiateInitialFromStoryboard()
-                    
-                    // Здесь можно настроить контроллер
-
                     let onboardingController = OnboardingViewController.instantiateInitialFromStoryboard()
                     onboardingController.embedController(contentController,
                                                          actionsDatasource: contentController)
@@ -52,8 +47,6 @@ class DownloadViewController: UIViewController {
                 }else{
                     performSegue(withIdentifier: "showPersonalData", sender: self)
                 }
-     
-
             }
             
         }
@@ -66,10 +59,10 @@ extension DownloadViewController{
     
     private func checkLoggedIn(){
 
-                let storyboard = UIStoryboard(name: "Auth", bundle: nil)
-                let loginViewController = storyboard.instantiateViewController(withIdentifier: "WelcomNavigationController") as! WelcomNavigationController
-                
-                self.present(loginViewController, animated: true)
+        let storyboard = UIStoryboard(name: "Auth", bundle: nil)
+        let loginViewController = storyboard.instantiateViewController(withIdentifier: "WelcomNavigationController") as! WelcomNavigationController
+        
+        self.present(loginViewController, animated: true)
     }
   
 }

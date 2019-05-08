@@ -11,7 +11,7 @@ import Firebase
 
 class Authorization{
     
-    static var sharedInstance = Authorization()
+    static let sharedInstance = Authorization()
     
     var authDoneCallBack: (() -> Void)?
     var authComplete = false
@@ -21,18 +21,18 @@ class Authorization{
     
     func signInAnonimously(completion: @escaping ()->()){
         
-        Auth.auth().signInAnonymously { (authResult, error) in
+        Auth.auth().signInAnonymously { [weak self](authResult, error) in
             if let error = error{
                 print(error.localizedDescription)
                 return
             }
             
             let user = authResult!.user
-            self.uid = user.uid     
+            self!.uid = user.uid
             
             completion()
-            self.authComplete = true
-            self.authDoneCallBack?()
+            self!.authComplete = true
+            self!.authDoneCallBack?()
         
         }
     }

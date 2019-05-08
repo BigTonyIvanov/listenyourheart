@@ -17,12 +17,13 @@ class FirebaseData{
     var userProfile: UserProfile?
     var ref: DatabaseReference!
     var isCreated: Bool = false
+    var tratata: Bool = false
     
     var loadingDoneCallback: (() -> Void)?
     var fetchComplete = false
     
     private init(){
-  
+        tratata = true
     }
     
     func saveIntoFirebase(userData: [String: Any]){
@@ -46,24 +47,27 @@ class FirebaseData{
     
     func getUserData(completion: @escaping ()->()){
         
-            guard let uid = Auth.auth().currentUser?.uid else {return}
-            self.ref = Database.database().reference()
-            self.ref.child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
-                
-                // Get user value
-                let value = snapshot.value as? [String: Any]
-                if value == nil{
-                    return
-                }
-                
-                print("--- Print ifo from database", value)
-                self.userProfile = UserProfile(data: value!)
-                self.isCreated = true
-                completion()
+        guard let uid = Auth.auth().currentUser?.uid else {return}
+        print("--- getUserData: UID is loaded " , uid)
 
-            }) { (error) in
-                print(error.localizedDescription)
+        self.ref = Database.database().reference()
+        self.ref.child("users").child(uid).observeSingleEvent(of: .value, with: { [weak self] (snapshot) in
+
+            
+            // Get user value
+            let value = snapshot.value as? [String: Any]
+            if value == nil{
+                return
             }
+            
+            self!.userProfile = UserProfile(data: value!)
+            self!.isCreated = true
+            
+            completion()
+
+        }) { (error) in
+            print(error.localizedDescription)
+        }
     }
     
     

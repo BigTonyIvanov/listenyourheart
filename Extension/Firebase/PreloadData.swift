@@ -19,8 +19,7 @@ class PreloadData {
     }
     
     // Download data for creating nedeed VC. Use semaphore for consistently load information!
-    
-    func loadData(complition: @escaping()->()){
+    func loadData(completion: @escaping()->()){
         
         queue.async {
             Authorization.sharedInstance.signInAnonimously {
@@ -32,7 +31,6 @@ class PreloadData {
             }
         }
         
-      
         queue.async {
             self.semaphore.wait()
             print("--- Start get info!!!")
@@ -42,11 +40,12 @@ class PreloadData {
         }
 
         queue.async {
+            self.semaphore.wait()
             print("--- Work with RcValues")
             if RCValues.sharedInstance.fetchComplete == true{
-                complition()
+                completion()
             }
-            RCValues.sharedInstance.loadingDoneCallback = complition
+            RCValues.sharedInstance.loadingDoneCallback = completion
         }
         
         

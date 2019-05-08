@@ -73,11 +73,11 @@ class LuckyLuckView: UIView {
 
 extension LuckyLuckView: UIScrollViewDelegate{
     
-    /*
-     * default function called when view is scrolled. In order to enable callback
-     * when scrollview is scrolled, the below code needs to be called:
-     * slideScrollView.delegate = self or
-     */
+    
+     // default function called when view is scrolled. In order to enable callback
+     // when scrollview is scrolled, the below code needs to be called:
+     // slideScrollView.delegate = self or
+
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = round(scrollView.contentOffset.x/self.frame.width)
         self.segmentedControl.selectedSegmentIndex = Int(pageIndex)

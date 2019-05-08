@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 import Firebase
 
 enum ValueKey: String {
@@ -28,19 +27,17 @@ class RCValues {
     
     func loadDefaultValues() {
         let appDefaults: [String: Any?] = [
-            ValueKey.requiredSubscription.rawValue: false
+            ValueKey.requiredSubscription.rawValue: true
         ]
         RemoteConfig.remoteConfig().setDefaults(appDefaults as? [String: NSObject])
     }
     
-    
-    
     func fetchCloudValues() {
-        // 1
+
         // WARNING: Don't actually do this in production!
         let fetchDuration: TimeInterval = 0
-        // Временно
         activateDebugMode()
+        
         RemoteConfig.remoteConfig().fetch(withExpirationDuration: fetchDuration) { [weak self] status, error in
             
             if let error = error {
@@ -48,7 +45,6 @@ class RCValues {
                 return
             }
             
-            // 2
             RemoteConfig.remoteConfig().activateFetched()
             print("Retrieved values from the cloud!")
             print("Our app's you need buying or no: \(RemoteConfig.remoteConfig().configValue(forKey: "requiredSubscription").stringValue ?? "undefined")")
@@ -58,7 +54,8 @@ class RCValues {
         }
     }
     
-    // для продакшина обязаельно в  false
+    
+    // WARNING: Need set to false for production!
     func activateDebugMode() {
         let debugSettings = RemoteConfigSettings(developerModeEnabled: true)
         RemoteConfig.remoteConfig().configSettings = debugSettings
@@ -69,7 +66,6 @@ class RCValues {
         let convertedColor = UIColor(cgColor: colorAsHexString as! CGColor)
         return convertedColor
     }
-    
     
     func int(forKey key: ValueKey) -> Int {
         return (RemoteConfig.remoteConfig()[key.rawValue].numberValue?.intValue)!
