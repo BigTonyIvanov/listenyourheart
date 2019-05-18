@@ -21,34 +21,44 @@ class PreloadData {
     // Download data for creating nedeed VC. Use semaphore for consistently load information!
     func loadData(completion: @escaping()->()){
         
-        queue.async {
-            Authorization.sharedInstance.signInAnonimously {
-                DispatchQueue.main.async {
-                    print("--- Anonim user is registered")
-                    print("--- UID user is" , Authorization.sharedInstance.uid!)
-                }
-                self.semaphore.signal()
-            }
-        }
+//        queue.async {
+////            self.semaphore.wait()
+//            print("--- 1")
+//            Authorization.sharedInstance.signInAnonimously {
+//                DispatchQueue.main.async {
+//                    print("--- Anonim user is registered")
+//                    print("--- UID user is" , Authorization.sharedInstance.uid!)
+//                }
+//                self.semaphore.signal()
+//            }
+//        }
         
         queue.async {
-            self.semaphore.wait()
+//            self.semaphore.wait()
             print("--- Start get info!!!")
-            FirebaseData.sharedInstanse.getUserData(completion: {
-                self.semaphore.signal()
-            })
+            print("--- 2")
+
+//            FirebaseData.sharedInstanse.getUserData(byID: Author, completion: {
+//                print("--- 2.2")
+//                self.semaphore.signal()
+//            })
         }
 
         queue.async {
             self.semaphore.wait()
             print("--- Work with RcValues")
+            print("--- 3")
+
             if RCValues.sharedInstance.fetchComplete == true{
                 completion()
             }
             RCValues.sharedInstance.loadingDoneCallback = completion
         }
         
-        
+    }
+    
+    
+    func loadData1(completion: @escaping()->()){
         
     }
 

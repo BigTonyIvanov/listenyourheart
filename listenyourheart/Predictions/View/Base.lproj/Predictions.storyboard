@@ -13,7 +13,7 @@
         <!--Your lucky luck-->
         <scene sceneID="t7t-kM-b7d">
             <objects>
-                <viewController id="Z5f-R4-tGY" customClass="LuckyLuckViewController" customModule="listenyourheart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LuckyLuckViewController" id="Z5f-R4-tGY" customClass="LuckyLuckViewController" customModule="listenyourheart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a4L-fr-de1" customClass="LuckyLuckView" customModule="listenyourheart" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +72,7 @@
         <!--Download View Controller-->
         <scene sceneID="ZtH-bk-I6x">
             <objects>
-                <viewController id="WY3-vV-tQb" customClass="DownloadViewController" customModule="listenyourheart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DownloadViewController" id="WY3-vV-tQb" customClass="DownloadViewController" customModule="listenyourheart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FdQ-ny-nLU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

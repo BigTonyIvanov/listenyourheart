@@ -11,6 +11,8 @@ import UIKit
 class MainSubscriptionViewController: UIViewController, Storyboardable, ViewSpecificController {
     typealias RootView = MainSubscriptionView
     
+    private var closeAction: (() -> ())? = nil
+    
     
     public func embedController(_ controller: UIViewController) {
         insertFullframeChildController(controller, index: 0)
@@ -24,8 +26,17 @@ class MainSubscriptionViewController: UIViewController, Storyboardable, ViewSpec
 // MARK: - Actions
 extension MainSubscriptionViewController {
     @IBAction private func closeDidPress(_ sender: Any) {
-        print("Pressed button tuped")
-        dismiss(animated: true)
+        if let closeAction = self.closeAction{
+            dismiss(animated: true)
+            closeAction()
+        }else{
+            dismiss(animated: true)
+        }
+    
+    }
+    
+    public func setCloseAction(clouser: @escaping () -> ()){
+        self.closeAction = clouser
     }
 
 }

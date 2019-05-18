@@ -41,10 +41,6 @@ class LuckyLuckViewController: UIViewController, ViewSpecificController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let isBuying = FirebaseData.sharedInstanse.userProfile?.buy
-        if isBuying == true{
-            self.navigationItem.rightBarButtonItem = nil
-        }
+
     }
 }

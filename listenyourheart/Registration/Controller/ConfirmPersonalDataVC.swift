@@ -68,18 +68,20 @@ class ConfirmPersonalDataVC: UIViewController, ViewSpecificController {
     @IBAction func confirmData(_ sender: Any) {
         let userData = ["name": self.name,"birthDate": self.birthday, "buy": "false"]
         
-        // save data into database (FirebaseData it`s my own class singelton)
-        FirebaseData.sharedInstanse.saveIntoFirebase(userData: userData)
-        
-        DispatchQueue.global(qos: .default).async {
-            
-            if RCValues.sharedInstance.fetchComplete == true{
-                self.changeScreen()
+        var uid = Authorization.sharedInstance.getUIDCurrentUser()
+        if uid == nil{
+            Authorization.sharedInstance.signInAnonimously { (authData) in
+                guard let currUid = authData?.user.uid else {return}
+                uid = currUid
             }
-            
-            RCValues.sharedInstance.loadingDoneCallback = self.changeScreen
- 
         }
+        
+        // save data into database (FirebaseData it`s my own class singelton)
+        FirebaseData.sharedInstanse.saveIntoFirebase(for: uid, userData: userData)
+        
+
+        self.changeScreen()
+
         
     }
     
@@ -94,7 +96,6 @@ extension ConfirmPersonalDataVC{
         DispatchQueue.main.async {
             
             let contentController = SubscriptionViewController.instantiateInitialFromStoryboard()
-            // Здесь можно настроить контроллер
             
             let onboardingController = OnboardingViewController.instantiateInitialFromStoryboard()
             onboardingController.embedController(contentController,
@@ -107,7 +108,13 @@ extension ConfirmPersonalDataVC{
             if needBuying == true{
                 btn?.isHidden = true
             }else{
-//                btn?.addTarget(self, action: #selector(modalController.openSubscriptionInfo), for: .touchUpInside)
+                modalController.setCloseAction {
+                    let storyboard = UIStoryboard(name: "Predictions", bundle: nil)
+                    let downloadViewController = storyboard.instantiateViewController(withIdentifier: "DownloadViewController") as! DownloadViewController
+//                    let downloadViewController = storyboard.instantiateViewController(withIdentifier: "LuckyLuckViewController") as! LuckyLuckViewController
+                    
+                    self.present(downloadViewController, animated: true)
+                }
             }
 
             self.present(modalController, animated: true)

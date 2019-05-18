@@ -6,35 +6,61 @@
 //  Copyright © 2019 Антон Иванов. All rights reserved.
 //
 
-import Foundation
-import Firebase
+import FirebaseAuth
 
 class Authorization{
     
     static let sharedInstance = Authorization()
     
-    var authDoneCallBack: (() -> Void)?
     var authComplete = false
-    var uid: String?
-    
+    var userIsRegistered: Bool?
+    var completion: (()->Void)?
+    var currentUser: UserProfile?
+   
     private init(){}
     
-    func signInAnonimously(completion: @escaping ()->()){
+    func signInAnonimously(completion: @escaping (_ user: AuthDataResult?)->()){
         
-        Auth.auth().signInAnonymously { [weak self](authResult, error) in
+        Auth.auth().signInAnonymously { [weak self] (authResult, error) in
             if let error = error{
                 print(error.localizedDescription)
                 return
             }
             
-            let user = authResult!.user
-            self!.uid = user.uid
-            
-            completion()
             self!.authComplete = true
-            self!.authDoneCallBack?()
-        
+            completion(authResult)
+
         }
+    }
+    
+    func checkRegistration(){
+
+        self.signInAnonimously { (authData) in
+            
+            let uid = authData?.user.uid
+            
+            FirebaseData.sharedInstanse.getUserData(byID: uid!, completion: { [weak self] (user) in
+                if let userCurrent = user{
+                    self!.currentUser = userCurrent
+                    self!.userIsRegistered = true
+                }else{
+                    self!.userIsRegistered = false
+                }
+                self?.completion?()
+            })
+        }
+    }
+    
+    func getUIDCurrentUser() -> String?{
+        return Auth.auth().currentUser?.uid
+    }
+    
+    func signOut(){
+        
+    }
+    
+    func registration(){
+        
     }
     
 

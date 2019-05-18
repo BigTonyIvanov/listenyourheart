@@ -7,48 +7,40 @@
 //
 
 import UIKit
-import FirebaseAuth
 
 class DownloadViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let loader = PreloadData()
-        loader.loadData {
-            self.goToNextScreen()
+        if RCValues.sharedInstance.fetchComplete{
+            startApp()
         }
-   
+        
+        RCValues.sharedInstance.loadingDoneCallback = startApp
     }
     
-
-    func goToNextScreen(){
-
-        if FirebaseData.sharedInstanse.isCreated == false{
-            checkLoggedIn()
+    private func startApp(){
+        let uid = Authorization.sharedInstance.getUIDCurrentUser()
+        
+        if let userUID = uid{
+            chooseScreen(for: userUID)
         }else{
-            
-            print("--- User is register")
-            let isBuying = FirebaseData.sharedInstanse.userProfile?.buy
-            if isBuying == true{
-                performSegue(withIdentifier: "showPersonalData", sender: self)
-            }else{
-                let needBuying = RCValues.sharedInstance.bool(forKey: .requiredSubscription)
-                if needBuying == true{
-                    let contentController = SubscriptionViewController.instantiateInitialFromStoryboard()
-                    let onboardingController = OnboardingViewController.instantiateInitialFromStoryboard()
-                    onboardingController.embedController(contentController,
-                                                         actionsDatasource: contentController)
-
-                    let modalController = onboardingController.wrapInModalContainer()
-                    modalController.view().closeButton.isHidden = true
-
-                    self.present(modalController, animated: true)
-                }else{
-                    performSegue(withIdentifier: "showPersonalData", sender: self)
+            Authorization.sharedInstance.signInAnonimously { [weak self](authData) in
+                if let currentUser = authData?.user{
+                    self?.chooseScreen(for: currentUser.uid)
                 }
             }
-            
+        }
+    }
+   
+    private func chooseScreen(for uid: String){
+        FirebaseData.sharedInstanse.getUserData(byID: uid) { (currentUser) in
+            if let currentUser = currentUser{
+                self.showDataScreen(user: currentUser)
+            }else{
+                self.checkLoggedIn()
+            }
         }
     }
 
@@ -64,5 +56,30 @@ extension DownloadViewController{
         
         self.present(loginViewController, animated: true)
     }
+    
+    private func showDataScreen(user: UserProfile){
+        if let isBuying = user.buy, isBuying{
+            performSegue(withIdentifier: "showPersonalData", sender: self)
+        }else{
+
+            let needBuying = RCValues.sharedInstance.bool(forKey: .requiredSubscription)
+            if needBuying == true{
+                openSibscribeScreen()
+            }else{
+                performSegue(withIdentifier: "showPersonalData", sender: self)
+            }
+        }
+    }
+    
+    private func openSibscribeScreen(){
+        let contentController = SubscriptionViewController.instantiateInitialFromStoryboard()
+        let onboardingController = OnboardingViewController.instantiateInitialFromStoryboard()
+        onboardingController.embedController(contentController,
+                                             actionsDatasource: contentController)
+        
+        let modalController = onboardingController.wrapInModalContainer()
+        modalController.view().closeButton.isHidden = true
+        
+        self.present(modalController, animated: true)    }
   
 }
