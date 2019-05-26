@@ -12,17 +12,16 @@ class DownloadViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         if RCValues.sharedInstance.fetchComplete{
             startApp()
         }
-        
+
         RCValues.sharedInstance.loadingDoneCallback = startApp
     }
     
     private func startApp(){
         let uid = Authorization.sharedInstance.getUIDCurrentUser()
-        
         if let userUID = uid{
             chooseScreen(for: userUID)
         }else{
@@ -35,11 +34,11 @@ class DownloadViewController: UIViewController {
     }
    
     private func chooseScreen(for uid: String){
-        FirebaseData.sharedInstanse.getUserData(byID: uid) { (currentUser) in
+        FirebaseData.sharedInstanse.getUserData(byID: uid) { [weak self](currentUser) in
             if let currentUser = currentUser{
-                self.showDataScreen(user: currentUser)
+                self?.showDataScreen(user: currentUser)
             }else{
-                self.checkLoggedIn()
+                self?.checkLoggedIn()
             }
         }
     }
@@ -80,6 +79,8 @@ extension DownloadViewController{
         let modalController = onboardingController.wrapInModalContainer()
         modalController.view().closeButton.isHidden = true
         
-        self.present(modalController, animated: true)    }
+        self.present(modalController, animated: true)
+        
+    }
   
 }

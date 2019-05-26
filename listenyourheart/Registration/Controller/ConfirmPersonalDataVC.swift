@@ -10,34 +10,34 @@ import UIKit
 
 enum ChineseYears: String, CaseIterable {
    
-    case dog = "dog.png"
-    case pig = "horse1"
-    case rat = "horse2"
-    case bull = "horse3"
-    case tiger = "horse"
-    case rabbit = "rabbit.png"
-    case dragon = "dragon.png"
-    case snake = "snake.png"
-    case horse = "horse.png"
-    case goat = "goat.png"
-    case monkey = "monkey.png"
-    case cock = "cock.png"
+    case dog = "Dog"
+    case pig = "Pig"
+    case rat = "Rat"
+    case bull = "Bull"
+    case tiger = "Tiger"
+    case rabbit = "Rabbit"
+    case dragon = "Dragon"
+    case snake = "Snake"
+    case horse = "Horse"
+    case goat = "Capricorn"
+    case monkey = "Monkey"
+    case cock = "Rooster"
 }
 
 enum ZodiacSigns: String, CaseIterable {
     
-    case oven = "dog.png"
-    case telec = "libra1"
-    case blizneci = "libra2"
-    case rak = "libra3"
-    case lev = "libra"
-    case deva = "rabbit.png"
-    case vesi = "dragon.png"
-    case skorpion = "snake.png"
-    case strelec = "horse.png"
-    case kozerog = "goat.png"
-    case vodolei = "monkey.png"
-    case ribi = "cock.png"
+    case aries = "Aries"
+    case taurus = "Taurus"
+    case gemini = "Gemini"
+    case cancer = "Cancer"
+    case leo = "Leo"
+    case virgo = "Virgo"
+    case libra = "Libra"
+    case scorpio = "Scorpio"
+    case sagitarius = "Sagitarius"
+    case capricorn = "Capricorn"
+    case aquarius = "Aquarius"
+    case pisces = "Pisces"
 }
 
 
@@ -156,18 +156,18 @@ extension ConfirmPersonalDataVC{
         var zodiac: String!
         
         switch month {
-            case 1:  zodiac = (day <= 20) ? ZodiacSigns.kozerog.rawValue : ZodiacSigns.vodolei.rawValue
-            case 2:  zodiac = (day <= 19) ? ZodiacSigns.vodolei.rawValue : ZodiacSigns.ribi.rawValue
-            case 3:  zodiac = (day <= 20) ? ZodiacSigns.ribi.rawValue : ZodiacSigns.oven.rawValue
-            case 4:  zodiac = (day <= 20) ? ZodiacSigns.oven.rawValue : ZodiacSigns.telec.rawValue
-            case 5:  zodiac = (day <= 21) ? ZodiacSigns.telec.rawValue : ZodiacSigns.blizneci.rawValue
-            case 6:  zodiac = (day <= 21) ? ZodiacSigns.blizneci.rawValue : ZodiacSigns.rak.rawValue
-            case 7:  zodiac = (day <= 22) ? ZodiacSigns.rak.rawValue : ZodiacSigns.lev.rawValue
-            case 8:  zodiac = (day <= 23) ? ZodiacSigns.lev.rawValue : ZodiacSigns.deva.rawValue
-            case 9:  zodiac = (day <= 23) ? ZodiacSigns.deva.rawValue : ZodiacSigns.vesi.rawValue
-            case 10:  zodiac = (day <= 23) ? ZodiacSigns.vesi.rawValue : ZodiacSigns.skorpion.rawValue
-            case 11:  zodiac = (day <= 22) ? ZodiacSigns.skorpion.rawValue : ZodiacSigns.strelec.rawValue
-            case 12:  zodiac = (day <= 23) ? ZodiacSigns.strelec.rawValue : ZodiacSigns.kozerog.rawValue
+            case 1:  zodiac = (day <= 20) ? ZodiacSigns.capricorn.rawValue : ZodiacSigns.aquarius.rawValue
+            case 2:  zodiac = (day <= 19) ? ZodiacSigns.aquarius.rawValue : ZodiacSigns.pisces.rawValue
+            case 3:  zodiac = (day <= 20) ? ZodiacSigns.pisces.rawValue : ZodiacSigns.aries.rawValue
+            case 4:  zodiac = (day <= 20) ? ZodiacSigns.aries.rawValue : ZodiacSigns.taurus.rawValue
+            case 5:  zodiac = (day <= 21) ? ZodiacSigns.taurus.rawValue : ZodiacSigns.gemini.rawValue
+            case 6:  zodiac = (day <= 21) ? ZodiacSigns.gemini.rawValue : ZodiacSigns.cancer.rawValue
+            case 7:  zodiac = (day <= 22) ? ZodiacSigns.cancer.rawValue : ZodiacSigns.leo.rawValue
+            case 8:  zodiac = (day <= 23) ? ZodiacSigns.leo.rawValue : ZodiacSigns.virgo.rawValue
+            case 9:  zodiac = (day <= 23) ? ZodiacSigns.virgo.rawValue : ZodiacSigns.libra.rawValue
+            case 10:  zodiac = (day <= 23) ? ZodiacSigns.libra.rawValue : ZodiacSigns.scorpio.rawValue
+            case 11:  zodiac = (day <= 22) ? ZodiacSigns.scorpio.rawValue : ZodiacSigns.sagitarius.rawValue
+            case 12:  zodiac = (day <= 23) ? ZodiacSigns.sagitarius.rawValue : ZodiacSigns.capricorn.rawValue
 
         default:
             break

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SliderPredictions: UIView {
+class SliderPredictions: UIView  {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var value: UILabel!
     @IBOutlet weak var additInfo: UILabel!

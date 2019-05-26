@@ -109,7 +109,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ToP-eZ-1He" customClass="CustomButton" customModule="listenyourheart" customModuleProvider="target">
-                                <rect key="frame" x="15" y="508" width="290" height="30"/>
+                                <rect key="frame" x="15" y="494" width="290" height="44"/>
                                 <state key="normal" title="NEXT"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="heightButton">
@@ -297,8 +297,12 @@
                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="libra" translatesAutoresizingMaskIntoConstraints="NO" id="xsm-Cj-3f3">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Libra" translatesAutoresizingMaskIntoConstraints="NO" id="xsm-Cj-3f3">
                                                         <rect key="frame" x="0.0" y="40" width="115" height="115"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="115" id="K18-L4-0PD"/>
+                                                            <constraint firstAttribute="width" constant="115" id="KrM-bG-HjB"/>
+                                                        </constraints>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
@@ -323,6 +327,12 @@
                                                     </textField>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horse" translatesAutoresizingMaskIntoConstraints="NO" id="7O0-Wx-GoE">
                                                         <rect key="frame" x="0.0" y="40" width="115" height="115"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="115" id="Eyb-qp-3lN"/>
+                                                            <constraint firstAttribute="height" constant="115" id="qfn-SG-CaR">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                                            </constraint>
+                                                        </constraints>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
@@ -330,6 +340,9 @@
                                                 </constraints>
                                             </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="155" id="4Jg-1r-oXd"/>
+                                        </constraints>
                                     </stackView>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="GZu-Fp-3gp">
                                         <rect key="frame" x="150" y="442" width="20" height="20"/>
@@ -339,7 +352,6 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="rlY-Gk-eiM" firstAttribute="top" secondItem="LzL-05-W0N" secondAttribute="bottom" constant="40" id="0Up-k6-N4H"/>
-                                    <constraint firstItem="RSR-jg-MNV" firstAttribute="top" relation="lessThanOrEqual" secondItem="rlY-Gk-eiM" secondAttribute="bottom" constant="113.5" id="A0A-sQ-927"/>
                                     <constraint firstAttribute="trailing" secondItem="RSR-jg-MNV" secondAttribute="trailing" constant="15" id="BLk-ED-G7K"/>
                                     <constraint firstItem="GZu-Fp-3gp" firstAttribute="centerX" secondItem="RSR-jg-MNV" secondAttribute="centerX" id="Ela-hw-pCt"/>
                                     <constraint firstItem="LzL-05-W0N" firstAttribute="top" secondItem="s15-D8-pNH" secondAttribute="bottom" constant="45" id="F82-6g-S4O">
@@ -400,8 +412,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Libra" width="708" height="708"/>
         <image name="bg" width="1125" height="2001"/>
         <image name="horse" width="115" height="115"/>
-        <image name="libra" width="115" height="115"/>
     </resources>
 </document>

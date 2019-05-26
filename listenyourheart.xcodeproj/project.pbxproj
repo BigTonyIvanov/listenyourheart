@@ -18,7 +18,6 @@
 		F7135AE7222B24FC002EAF6E /* InsertChildToUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7135AE6222B24FC002EAF6E /* InsertChildToUiViewController.swift */; };
 		F7135AE9222B2579002EAF6E /* AddConstraintsToUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7135AE8222B2579002EAF6E /* AddConstraintsToUIView.swift */; };
 		F7135AEB222BC7B1002EAF6E /* MainSubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7135AEA222BC7B1002EAF6E /* MainSubscriptionView.swift */; };
-		F7163E19224039A500FD6F2F /* PreloadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7163E18224039A500FD6F2F /* PreloadData.swift */; };
 		F74901A62214AFE2005D025E /* SubscriptionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74901A52214AFE2005D025E /* SubscriptionViewController.storyboard */; };
 		F74901AA221C8587005D025E /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74901A9221C8587005D025E /* SubscriptionView.swift */; };
 		F74901AC221C8624005D025E /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74901AB221C8624005D025E /* Storyboardable.swift */; };
@@ -31,6 +30,21 @@
 		F75791D02236C22400943031 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75791CF2236C22400943031 /* DownloadViewController.swift */; };
 		F78BA93521FE460300D0A676 /* ConfirmPersonalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78BA93421FE460300D0A676 /* ConfirmPersonalDataView.swift */; };
 		F78BA93721FE462000D0A676 /* ConfirmPersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78BA93621FE462000D0A676 /* ConfirmPersonalDataVC.swift */; };
+		F7B041F02295A9460030BE2C /* PredictionsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B041EF2295A9460030BE2C /* PredictionsData.swift */; };
+		F7B041F22295AAA90030BE2C /* NameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B041F12295AAA90030BE2C /* NameData.swift */; };
+		F7B041F42295AE1A0030BE2C /* ColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B041F32295AE1A0030BE2C /* ColorData.swift */; };
+		F7B041F62295AE270030BE2C /* TimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B041F52295AE270030BE2C /* TimeData.swift */; };
+		F7B0421E2299E9C80030BE2C /* PredictionsDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0421D2299E9C80030BE2C /* PredictionsDataFactory.swift */; };
+		F7B042202299E9DE0030BE2C /* TimeDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0421F2299E9DE0030BE2C /* TimeDataFactory.swift */; };
+		F7B042222299E9EF0030BE2C /* ColorDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B042212299E9EF0030BE2C /* ColorDataFactory.swift */; };
+		F7B042242299EA060030BE2C /* NameDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B042232299EA060030BE2C /* NameDataFactory.swift */; };
+		F7B04229229A5F070030BE2C /* BehaviorUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B04228229A5F070030BE2C /* BehaviorUser.swift */; };
+		F7B04230229A5F7C0030BE2C /* RegisterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0422A229A5F7B0030BE2C /* RegisterUser.swift */; };
+		F7B04231229A5F7C0030BE2C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0422B229A5F7C0030BE2C /* User.swift */; };
+		F7B04232229A5F7C0030BE2C /* BehaviorRegisterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0422C229A5F7C0030BE2C /* BehaviorRegisterUser.swift */; };
+		F7B04233229A5F7C0030BE2C /* NonRegisterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0422D229A5F7C0030BE2C /* NonRegisterUser.swift */; };
+		F7B04234229A5F7C0030BE2C /* PayUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0422E229A5F7C0030BE2C /* PayUser.swift */; };
+		F7B04235229A5F7C0030BE2C /* NonPayUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0422F229A5F7C0030BE2C /* NonPayUser.swift */; };
 		F7DDC4C921F5A3F700D0D928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DDC4C821F5A3F700D0D928 /* AppDelegate.swift */; };
 		F7DDC4CE21F5A3F700D0D928 /* Predictions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DDC4CC21F5A3F700D0D928 /* Predictions.storyboard */; };
 		F7DDC4D021F5A3F900D0D928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DDC4CF21F5A3F900D0D928 /* Assets.xcassets */; };
@@ -63,7 +77,6 @@
 		F7135AE6222B24FC002EAF6E /* InsertChildToUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertChildToUiViewController.swift; sourceTree = "<group>"; };
 		F7135AE8222B2579002EAF6E /* AddConstraintsToUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddConstraintsToUIView.swift; sourceTree = "<group>"; };
 		F7135AEA222BC7B1002EAF6E /* MainSubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSubscriptionView.swift; sourceTree = "<group>"; };
-		F7163E18224039A500FD6F2F /* PreloadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadData.swift; sourceTree = "<group>"; };
 		F74901A52214AFE2005D025E /* SubscriptionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubscriptionViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		F74901A9221C8587005D025E /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = SOURCE_ROOT; };
 		F74901AB221C8624005D025E /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
@@ -76,6 +89,21 @@
 		F75791CF2236C22400943031 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 		F78BA93421FE460300D0A676 /* ConfirmPersonalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPersonalDataView.swift; sourceTree = "<group>"; };
 		F78BA93621FE462000D0A676 /* ConfirmPersonalDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPersonalDataVC.swift; sourceTree = "<group>"; };
+		F7B041EF2295A9460030BE2C /* PredictionsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PredictionsData.swift; path = "listenyourheart/Predictions/Model/listenyourheart/Predictions/Model/New Group/PredictionsData.swift"; sourceTree = SOURCE_ROOT; };
+		F7B041F12295AAA90030BE2C /* NameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NameData.swift; path = listenyourheart/Predictions/Model/NameData.swift; sourceTree = SOURCE_ROOT; };
+		F7B041F32295AE1A0030BE2C /* ColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorData.swift; path = "listenyourheart/Predictions/Model/listenyourheart/Predictions/Model/New Group/ColorData.swift"; sourceTree = SOURCE_ROOT; };
+		F7B041F52295AE270030BE2C /* TimeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeData.swift; path = listenyourheart/Predictions/Model/TimeData.swift; sourceTree = SOURCE_ROOT; };
+		F7B0421D2299E9C80030BE2C /* PredictionsDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionsDataFactory.swift; sourceTree = "<group>"; };
+		F7B0421F2299E9DE0030BE2C /* TimeDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDataFactory.swift; sourceTree = "<group>"; };
+		F7B042212299E9EF0030BE2C /* ColorDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDataFactory.swift; sourceTree = "<group>"; };
+		F7B042232299EA060030BE2C /* NameDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameDataFactory.swift; sourceTree = "<group>"; };
+		F7B04228229A5F070030BE2C /* BehaviorUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BehaviorUser.swift; path = "listenyourheart/Predictions/Model/New Group/BehaviorUser.swift"; sourceTree = "<group>"; };
+		F7B0422A229A5F7B0030BE2C /* RegisterUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterUser.swift; path = "listenyourheart/Predictions/Model/New Group/RegisterUser.swift"; sourceTree = "<group>"; };
+		F7B0422B229A5F7C0030BE2C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = "listenyourheart/Predictions/Model/New Group/User.swift"; sourceTree = "<group>"; };
+		F7B0422C229A5F7C0030BE2C /* BehaviorRegisterUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BehaviorRegisterUser.swift; path = "listenyourheart/Predictions/Model/New Group/BehaviorRegisterUser.swift"; sourceTree = "<group>"; };
+		F7B0422D229A5F7C0030BE2C /* NonRegisterUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NonRegisterUser.swift; path = "listenyourheart/Predictions/Model/New Group/NonRegisterUser.swift"; sourceTree = "<group>"; };
+		F7B0422E229A5F7C0030BE2C /* PayUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PayUser.swift; path = "listenyourheart/Predictions/Model/New Group/PayUser.swift"; sourceTree = "<group>"; };
+		F7B0422F229A5F7C0030BE2C /* NonPayUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NonPayUser.swift; path = "listenyourheart/Predictions/Model/New Group/NonPayUser.swift"; sourceTree = "<group>"; };
 		F7DDC4C521F5A3F700D0D928 /* listenyourheart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = listenyourheart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DDC4C821F5A3F700D0D928 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DDC4CD21F5A3F700D0D928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Predictions.storyboard; sourceTree = "<group>"; };
@@ -154,7 +182,6 @@
 				F7EA0BA221F838D3003E3A2A /* Authorization.swift */,
 				F708B84E220CA6EE006A165F /* FirebaseData.swift */,
 				F708B850220CBCE4006A165F /* RCValues.swift */,
-				F7163E18224039A500FD6F2F /* PreloadData.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -364,6 +391,21 @@
 		F7DDC4F121F6492D00D0D928 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F7B0422C229A5F7C0030BE2C /* BehaviorRegisterUser.swift */,
+				F7B0422F229A5F7C0030BE2C /* NonPayUser.swift */,
+				F7B0422D229A5F7C0030BE2C /* NonRegisterUser.swift */,
+				F7B0422E229A5F7C0030BE2C /* PayUser.swift */,
+				F7B0422A229A5F7B0030BE2C /* RegisterUser.swift */,
+				F7B0422B229A5F7C0030BE2C /* User.swift */,
+				F7B04228229A5F070030BE2C /* BehaviorUser.swift */,
+				F7B041EF2295A9460030BE2C /* PredictionsData.swift */,
+				F7B041F12295AAA90030BE2C /* NameData.swift */,
+				F7B041F32295AE1A0030BE2C /* ColorData.swift */,
+				F7B041F52295AE270030BE2C /* TimeData.swift */,
+				F7B0421D2299E9C80030BE2C /* PredictionsDataFactory.swift */,
+				F7B0421F2299E9DE0030BE2C /* TimeDataFactory.swift */,
+				F7B042212299E9EF0030BE2C /* ColorDataFactory.swift */,
+				F7B042232299EA060030BE2C /* NameDataFactory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -536,32 +578,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7EA0BB921F9CA4E003E3A2A /* PersonalDataVC.swift in Sources */,
+				F7B04234229A5F7C0030BE2C /* PayUser.swift in Sources */,
+				F7B042202299E9DE0030BE2C /* TimeDataFactory.swift in Sources */,
 				F7EA0BA821F892BC003E3A2A /* ViewSpecificController.swift in Sources */,
+				F7B04235229A5F7C0030BE2C /* NonPayUser.swift in Sources */,
 				F708B84D220CA4EA006A165F /* UserProfile.swift in Sources */,
+				F7B04233229A5F7C0030BE2C /* NonRegisterUser.swift in Sources */,
 				F708B84F220CA6EE006A165F /* FirebaseData.swift in Sources */,
 				F7135AE9222B2579002EAF6E /* AddConstraintsToUIView.swift in Sources */,
 				F7EA0BAA21F9068E003E3A2A /* WelcomNavigationController.swift in Sources */,
+				F7B042242299EA060030BE2C /* NameDataFactory.swift in Sources */,
+				F7B042222299E9EF0030BE2C /* ColorDataFactory.swift in Sources */,
 				F7EA0BB721F98C3C003E3A2A /* CustomButton.swift in Sources */,
+				F7B041F02295A9460030BE2C /* PredictionsData.swift in Sources */,
 				F74901B4221C8F1E005D025E /* OnboardingView.swift in Sources */,
+				F7B0421E2299E9C80030BE2C /* PredictionsDataFactory.swift in Sources */,
 				F7135AEB222BC7B1002EAF6E /* MainSubscriptionView.swift in Sources */,
 				F74901B2221C8F10005D025E /* OnboardingViewController.swift in Sources */,
 				F7EA0BBB21F9CA97003E3A2A /* PersonalDataView.swift in Sources */,
 				F7104EC82271F81300D8F6F3 /* SliderPredictions.swift in Sources */,
 				F7DDC4DF21F5EE2500D0D928 /* WelcomViewController.swift in Sources */,
 				F7EA0BA321F838D3003E3A2A /* Authorization.swift in Sources */,
+				F7B04231229A5F7C0030BE2C /* User.swift in Sources */,
 				F78BA93521FE460300D0A676 /* ConfirmPersonalDataView.swift in Sources */,
+				F7B04230229A5F7C0030BE2C /* RegisterUser.swift in Sources */,
 				F74901AA221C8587005D025E /* SubscriptionView.swift in Sources */,
-				F7163E19224039A500FD6F2F /* PreloadData.swift in Sources */,
 				F74901AC221C8624005D025E /* Storyboardable.swift in Sources */,
 				F7135AE7222B24FC002EAF6E /* InsertChildToUiViewController.swift in Sources */,
 				F78BA93721FE462000D0A676 /* ConfirmPersonalDataVC.swift in Sources */,
 				F7EA0BA521F88B01003E3A2A /* WelcomView.swift in Sources */,
+				F7B04232229A5F7C0030BE2C /* BehaviorRegisterUser.swift in Sources */,
+				F7B041F62295AE270030BE2C /* TimeData.swift in Sources */,
 				F75791D02236C22400943031 /* DownloadViewController.swift in Sources */,
 				F74901BA22287BCF005D025E /* MainSubscriptionViewController.swift in Sources */,
 				F74901BC22288C87005D025E /* SubscriptionViewController.swift in Sources */,
 				F7104EAE226EF79D00D8F6F3 /* LuckyLuckViewController.swift in Sources */,
+				F7B041F22295AAA90030BE2C /* NameData.swift in Sources */,
 				F7104EAC226EF4FB00D8F6F3 /* LuckyLuckView.swift in Sources */,
 				F7DDC4C921F5A3F700D0D928 /* AppDelegate.swift in Sources */,
+				F7B04229229A5F070030BE2C /* BehaviorUser.swift in Sources */,
+				F7B041F42295AE1A0030BE2C /* ColorData.swift in Sources */,
 				F708B851220CBCE4006A165F /* RCValues.swift in Sources */,
 				F7EA0BAD21F91207003E3A2A /* Slide.swift in Sources */,
 			);
